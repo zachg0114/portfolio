@@ -1,9 +1,10 @@
 import Head from 'next/head';
-import ProjectCard from '../components/ProjectCard'; // Updated card component
+import ProjectCard from '../components/ProjectCard';
+import ViewAllButton from '../components/ViewAllButton'; // Import the new button
 
 export default function Home() {
   return (
-    <div className="bg-[#0e0e11] text-white min-h-screen">
+    <div className="bg-[#0a0c1a] text-white min-h-screen"> {/* Updated background to dark blue */}
       <Head>
         <title>Zach Greene - Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
@@ -23,14 +24,14 @@ export default function Home() {
 
       <main className="max-w-7xl mx-auto px-6 py-12">
         <header className="text-center mb-20">
-          <h1 className="text-3xl font-bold">
-          Harnessing technology to build{' '}
-            <span className="text-gradient bg-gradient-to-r from-[#00ff99] via-blue-400 to-green-500 bg-clip-text text-transparent">
-            smarter, faster, and better.
+          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">
+            Harnessing technology to build{' '}
+            <span className="text-gradient bg-gradient-to-r from-[#d8b4fe] via-[#a855f7] to-[#7e22ce] bg-clip-text text-transparent">
+              smarter, faster, and better.
             </span>
           </h1>
           <p className="mt-4 text-lg text-gray-400">
-          Enterprise Technology Integration major at Penn State, focused on application development and innovative tech solutions.
+            Enterprise Technology Integration major at Penn State, focused on application development and innovative tech solutions.
           </p>
           <div className="flex justify-center space-x-4 mt-6">
             {/* Use icons from the public/icons/ directory */}
@@ -67,19 +68,23 @@ export default function Home() {
               tags={['HTML', 'React', 'JavaScript']}
             />
           </div>
-          <a href="https://github.com/zachg0114" className="block mt-6 text-center text-[#00ff99] hover:underline">View All Projects</a>
+
+          {/* Use the ViewAllButton component here */}
+          <div className="flex justify-center mt-6">
+            <ViewAllButton />
+          </div>
         </section>
 
         {/* Add the contact section here */}
         <section className="text-center mt-16">
           <h2 className="text-4xl font-semibold">Want to get in touch?</h2>
           <p className="mt-4 text-lg text-gray-400">
-          Feel free to reach out—I'd love to hear from you!
+            Feel free to reach out—I'd love to hear from you!
           </p>
           <div className="mt-8">
             <a
               href="mailto:zachgreene88@gmail.com"
-              className="inline-block bg-[#00ff99] text-black text-lg font-semibold px-8 py-4 rounded-md hover:bg-green-500 transition duration-300"
+              className="inline-block bg-[#a855f7] text-black text-lg font-semibold px-8 py-4 rounded-md hover:bg-purple-500 transition duration-300"
             >
               <i className="fas fa-envelope"></i> Contact me
             </a>

@@ -24,7 +24,7 @@ export default function ProjectCard({ title, description, tags, imageSrc }) {
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="bg-[#00ff99] text-black text-xs font-semibold px-3 py-1 rounded"
+              className="bg-[#a855f7] text-white text-xs font-semibold px-3 py-1 rounded"
             >
               {tag}
             </span>
