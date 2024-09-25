@@ -1,26 +1,28 @@
-import Head from 'next/head';
+export const metadata = {
+  title: 'Zach Greene - Portfolio',
+};
+
 import ProjectCard from '../components/ProjectCard';
-import ViewAllButton from '../components/ViewAllButton'; // Import the new button
+import ViewAllButton from '../components/ViewAllButton';
+import ContactButton from '../components/ContactButton';
 
 export default function Home() {
   return (
     <div className="bg-[#0a0c1a] text-white min-h-screen"> {/* Updated background to dark blue */}
-      <Head>
-        <title>Zach Greene - Portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
-        <style>{`
-          /* For modern browsers */
-          ::-webkit-scrollbar {
-            width: 0;
-            height: 0;
-          }
+      <header className="flex justify-between items-center py-6 px-6 max-w-7xl mx-auto">
+        {/* Name on the left */}
+        <h1 className="text-2xl font-bold text-[#d8b4fe]">Zach Greene</h1>
 
-          body {
-            -ms-overflow-style: none;  /* Internet Explorer and Edge */
-            scrollbar-width: none;  /* Firefox */
-          }
-        `}</style>
-      </Head>
+        {/* Resume link on the right */}
+        <a
+          href="/files/resume.pdf" // Correct path to your resume
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#a855f7] hover:text-[#d8b4fe] underline"
+        >
+          View Resume
+        </a>
+      </header>
 
       <main className="max-w-7xl mx-auto px-6 py-12">
         <header className="text-center mb-20">
@@ -34,7 +36,6 @@ export default function Home() {
             Enterprise Technology Integration major at Penn State, focused on application development and innovative tech solutions.
           </p>
           <div className="flex justify-center space-x-4 mt-6">
-            {/* Use icons from the public/icons/ directory */}
             <a href="https://github.com/zachg0114" target="_blank" rel="noopener noreferrer">
               <img src="/icons/github.svg" alt="GitHub" className="w-8 h-8" />
             </a>
@@ -49,23 +50,21 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
             <ProjectCard
               title="Project 1"
-              description="Lorem ipsum dolor sit amet consectetur adipiscing elit. Officiis aperiam ducimus ullam fugiat."
+              description="A short description of Project 1."
+              longDescription="This is a longer description of Project 1, which goes into more details about the technologies used, the development process, and other relevant information."
               tags={['HTML', 'React', 'JavaScript']}
             />
             <ProjectCard
               title="Project 2"
-              description="Lorem ipsum dolor sit amet consectetur adipiscing elit. Officiis aperiam ducimus ullam fugiat."
-              tags={['HTML', 'React', 'JavaScript']}
+              description="A short description of Project 2."
+              longDescription="This is a longer description of Project 2, which goes into more details about the technologies used, the development process, and other relevant information."
+              tags={['CSS', 'Node.js', 'MongoDB']}
             />
             <ProjectCard
               title="Project 3"
-              description="Lorem ipsum dolor sit amet consectetur adipiscing elit. Officiis aperiam ducimus ullam fugiat."
-              tags={['HTML', 'React', 'JavaScript']}
-            />
-            <ProjectCard
-              title="Project 4"
-              description="Lorem ipsum dolor sit amet consectetur adipiscing elit. Officiis aperiam ducimus ullam fugiat."
-              tags={['HTML', 'React', 'JavaScript']}
+              description="A short description of Project 3."
+              longDescription="This is a longer description of Project 3, which goes into more details about the technologies used, the development process, and other relevant information."
+              tags={['Python', 'Flask', 'SQL']}
             />
           </div>
 
@@ -82,15 +81,9 @@ export default function Home() {
             Feel free to reach out—I'd love to hear from you!
           </p>
           <div className="mt-8">
-            <a
-              href="mailto:zachgreene88@gmail.com"
-              className="inline-block bg-[#a855f7] text-black text-lg font-semibold px-8 py-4 rounded-md hover:bg-purple-500 transition duration-300"
-            >
-              <i className="fas fa-envelope"></i> Contact me
-            </a>
+            <ContactButton /> {/* Use the new ContactButton component */}
           </div>
         </section>
-
       </main>
 
       <footer className="text-center py-6 border-t border-gray-800 mt-16">
