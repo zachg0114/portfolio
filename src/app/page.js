@@ -15,7 +15,7 @@ export default function Home() {
 
         {/* Resume link on the right */}
         <a
-          href="/files/resume.pdf" // Correct path to your resume
+          href="https://docs.google.com/document/d/1WqR7lw2kTeIiGc0zGBCBx_BJ6oY14Ylf/edit?usp=sharing&ouid=103015075994483174652&rtpof=true&sd=true" // Correct path to your resume
           target="_blank"
           rel="noopener noreferrer"
           className="text-[#a855f7] hover:text-[#d8b4fe] underline"
