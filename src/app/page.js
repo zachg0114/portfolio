@@ -86,8 +86,15 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="text-center py-6 border-t border-gray-800 mt-16">
-        <p>© Zach Greene</p>
+      <footer className="relative text-center py-6 border-t border-gray-800 mt-16">
+        <p>© Zach Greene - 2024</p>
+
+        {/* Add favicon in the bottom left */}
+        <img
+          src="/icons/zicon.webp" // Use the correct path to your logo image
+          alt="Z Logo"
+          className="absolute bottom-4 left-4 w-8 h-8"
+        />
       </footer>
     </div>
   );
