@@ -7,6 +7,18 @@ export default function Home() {
       <Head>
         <title>Zach Greene - Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
+        <style>{`
+          /* For modern browsers */
+          ::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+          }
+
+          body {
+            -ms-overflow-style: none;  /* Internet Explorer and Edge */
+            scrollbar-width: none;  /* Firefox */
+          }
+        `}</style>
       </Head>
 
       <main className="max-w-7xl mx-auto px-6 py-12">
