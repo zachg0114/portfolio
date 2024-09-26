@@ -3,7 +3,7 @@
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter } from "@nextui-org/modal";
 import { Button } from "@nextui-org/react";
 
-const ProjectModal = ({ isOpen, onOpenChange, title, longDescription, imageSrc }) => {
+const ProjectModal = ({ isOpen, onOpenChange, title, longDescription, imageSrc, projectLink }) => {
   return (
     <Modal
       isOpen={isOpen}
@@ -47,21 +47,16 @@ const ProjectModal = ({ isOpen, onOpenChange, title, longDescription, imageSrc }
               >
                 Close
               </Button>
-              <Button
-                color="gradient"
-                auto
-                className="ml-3"
-                css={{
-                  background: 'linear-gradient(90deg, #a855f7, #9333ea)',
-                  color: '#fff',
-                  '&:hover': {
-                    background: 'linear-gradient(90deg, #9333ea, #7e22ce)',
-                  },
-                }}
-                onPress={onClose}
-              >
-                Action
-              </Button>
+              {projectLink && (
+                <a href={projectLink} target="_blank" rel="noopener noreferrer">
+                  <Button
+                    auto
+                    className="ml-3 bg-transparent border border-green-500 text-green-500 hover:bg-green-500 hover:text-white transition-all"
+                  >
+                    Project Link
+                  </Button>
+                </a>
+              )}
             </ModalFooter>
           </>
         )}
