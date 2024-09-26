@@ -5,7 +5,7 @@ export const metadata = {
 import ProjectCard from '../components/ProjectCard';
 import ViewAllButton from '../components/ViewAllButton';
 import ContactButton from '../components/ContactButton';
-import TestimonialCarousel from '../components/TestimonialCarousel'; // Importing the new component
+import TestimonialCarousel from '../components/TestimonialCarousel';
 
 export default function Home() {
   return (
@@ -28,7 +28,7 @@ export default function Home() {
 
       <main className="max-w-7xl mx-auto py-8 lg:py-16">
         {/* Main title section with responsive font sizes */}
-        <header className="text-center mb-16 lg:mb-24">
+        <section className="text-center mb-16 lg:mb-24">
           <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight">
             Harnessing technology to build{' '}
             <span className="text-gradient bg-gradient-to-r from-[#d8b4fe] via-[#a855f7] to-[#7e22ce] bg-clip-text text-transparent">
@@ -46,11 +46,14 @@ export default function Home() {
               <img src="/icons/linkedin.svg" alt="LinkedIn" className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12" />
             </a>
           </div>
-        </header>
+        </section>
+
+        {/* Divider */}
+        <hr className="border-t border-gray-800 my-12" />
 
         {/* Projects Section */}
         <section className="mt-8 lg:mt-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center">Projects</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-semibold text-center mb-8">Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mt-10 lg:mt-16 justify-items-center">
             <ProjectCard
               title="Stride"
@@ -108,23 +111,37 @@ export default function Home() {
             />
           </div>
 
-          {/* Use the ViewAllButton component here */}
+          {/* View All Button */}
           <div className="flex justify-center mt-10 lg:mt-12">
             <ViewAllButton />
           </div>
         </section>
 
-        {/* Testimonial Carousel Component */}
-        <TestimonialCarousel />
+        {/* Decorative Divider */}
+        <div className="relative my-16 lg:my-24">
+          <div className="absolute inset-0 flex items-center" aria-hidden="true">
+            <div className="w-full border-t border-gray-800"></div>
+          </div>
+          <div className="relative flex justify-center">
+          </div>
+        </div>
 
-        {/* Add the contact section here */}
+        {/* Testimonial Carousel Component */}
+        <section className="mt-8 lg:mt-16">
+          <TestimonialCarousel />
+        </section>
+
+        {/* Another Divider */}
+        <hr className="border-t border-gray-800 my-12" />
+
+        {/* Contact Section */}
         <section className="text-center mt-12 lg:mt-16">
           <h2 className="text-3xl lg:text-4xl font-semibold">Want to get in touch?</h2>
           <p className="mt-4 text-lg lg:text-2xl text-gray-400">
             Feel free to reach out—I'd love to hear from you!
           </p>
           <div className="mt-8 lg:mt-10">
-            <ContactButton /> {/* Use the new ContactButton component */}
+            <ContactButton />
           </div>
         </section>
       </main>
@@ -134,7 +151,7 @@ export default function Home() {
 
         {/* Add favicon in the bottom left */}
         <img
-          src="/icons/zicon.webp" // Use the correct path to your logo image
+          src="/icons/zicon.webp"
           alt="Z Logo"
           className="absolute bottom-4 left-4 w-8 h-8 lg:w-10 lg:h-10"
         />
