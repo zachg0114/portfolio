@@ -22,7 +22,7 @@ const ProjectModal = ({ isOpen, onOpenChange, title, longDescription, imageSrc, 
               <h3 className="text-2xl font-bold text-[#d8b4fe]">{title}</h3> {/* Add purple gradient */}
             </ModalHeader>
 
-            <ModalBody className="py-6">
+            <ModalBody className="py-6 overflow-y-auto" style={{ maxHeight: '75vh' }}>
               {/* Long description */}
               <p className="text-gray-300 mb-4">{longDescription}</p> {/* Text color adjusted */}
 
