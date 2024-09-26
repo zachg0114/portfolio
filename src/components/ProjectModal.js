@@ -15,27 +15,31 @@ const ProjectModal = ({ isOpen, onOpenChange, title, longDescription, imageSrc, 
       radius="lg" // Rounded corners for a modern feel
       size="lg" // Large modal to give enough space for content
     >
-      <ModalContent>
-        {(onClose) => (
-          <>
-            <div className="overflow-y-auto" style={{ maxHeight: '75vh' }}> {/* Wrapping the entire modal content in a scrollable div */}
+              <ModalContent>
+          {(onClose) => (
+            <>
               <ModalHeader className="flex flex-col gap-1">
-                <h3 className="text-2xl font-bold text-[#d8b4fe]">{title}</h3> {/* Add purple gradient */}
+                <h3 className="text-2xl font-bold text-[#d8b4fe]">{title}</h3>
               </ModalHeader>
 
               <ModalBody className="py-6">
-                {/* Long description */}
-                <p className="text-gray-300 mb-4">{longDescription}</p> {/* Text color adjusted */}
+                <div
+                  className="overflow-y-auto"
+                  style={{ maxHeight: '75vh' }}
+                >
+                  {/* Long description */}
+                  <p className="text-gray-300 mb-4">{longDescription}</p>
 
-                {/* Image in modal */}
-                {imageSrc && (
-                  <img
-                    src={imageSrc}
-                    alt={`${title} detailed image`}
-                    className="rounded-lg shadow-lg" // Add rounded corners and shadow to the image
-                    style={{ width: "100%", height: "auto", objectFit: "cover" }}
-                  />
-                )}
+                  {/* Image in modal */}
+                  {imageSrc && (
+                    <img
+                      src={imageSrc}
+                      alt={`${title} detailed image`}
+                      className="rounded-lg shadow-lg"
+                      style={{ width: "100%", height: "auto", objectFit: "cover" }}
+                    />
+                  )}
+                </div>
               </ModalBody>
 
               <ModalFooter className="flex justify-end">
@@ -59,10 +63,10 @@ const ProjectModal = ({ isOpen, onOpenChange, title, longDescription, imageSrc, 
                   </a>
                 )}
               </ModalFooter>
-            </div>
-          </>
-        )}
-      </ModalContent>
+            </>
+          )}
+        </ModalContent>
+
     </Modal>
   );
 };
