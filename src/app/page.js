@@ -10,48 +10,48 @@ import TestimonialCarousel from '../components/TestimonialCarousel'; // Importin
 export default function Home() {
   return (
     <div className="bg-[#0a0c1a] text-white min-h-screen">
-      {/* Header section with larger text */}
-      <header className="flex justify-between items-center py-8 px-8 max-w-7xl mx-auto">
+      {/* Header section with responsive text */}
+      <header className="flex justify-between items-center py-4 px-4 lg:py-8 lg:px-8 max-w-7xl mx-auto">
         {/* Name on the left */}
-        <h1 className="text-4xl lg:text-5xl font-bold text-[#d8b4fe]">Zach Greene</h1>
+        <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-[#d8b4fe]">Zach Greene</h1>
 
         {/* Resume link on the right */}
         <a
           href="https://drive.google.com/file/d/1llsLqF-0HTSlhaWuHKfwhS9oxJoC0lGL/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#a855f7] hover:text-[#d8b4fe] underline text-xl lg:text-2xl"
+          className="text-[#a855f7] hover:text-[#d8b4fe] underline text-lg sm:text-xl lg:text-2xl"
         >
           View Resume
         </a>
       </header>
 
-      <main className="max-w-7xl mx-auto px-8 py-16">
-        {/* Main title section with larger font sizes */}
-        <header className="text-center mb-24">
-          <h1 className="text-5xl lg:text-6xl font-extrabold leading-tight">
+      <main className="max-w-7xl mx-auto px-4 py-8 lg:px-8 lg:py-16">
+        {/* Main title section with responsive font sizes */}
+        <header className="text-center mb-16 lg:mb-24">
+          <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight">
             Harnessing technology to build{' '}
             <span className="text-gradient bg-gradient-to-r from-[#d8b4fe] via-[#a855f7] to-[#7e22ce] bg-clip-text text-transparent">
               smarter, faster, and better.
             </span>
           </h1>
-          <p className="mt-6 text-2xl lg:text-3xl text-gray-400">
+          <p className="mt-4 text-lg sm:text-xl lg:text-2xl text-gray-400">
             Enterprise Technology Integration major at Penn State, focused on application development and innovative tech solutions.
           </p>
-          <div className="flex justify-center space-x-6 mt-8">
+          <div className="flex justify-center space-x-4 mt-6">
             <a href="https://github.com/zachg0114" target="_blank" rel="noopener noreferrer">
-              <img src="/icons/github.svg" alt="GitHub" className="w-10 h-10 lg:w-12 lg:h-12" />
+              <img src="/icons/github.svg" alt="GitHub" className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12" />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <img src="/icons/linkedin.svg" alt="LinkedIn" className="w-10 h-10 lg:w-12 lg:h-12" />
+              <img src="/icons/linkedin.svg" alt="LinkedIn" className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12" />
             </a>
           </div>
         </header>
 
         {/* Projects Section */}
-        <section className="mt-16">
-          <h2 className="text-4xl lg:text-5xl font-semibold text-center">Projects</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mt-16">
+        <section className="mt-8 lg:mt-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center">Projects</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mt-10 lg:mt-16">
             <ProjectCard
               title="Stride"
               description="A sneaker reselling platform with a website and Discord bot for tracking sales and managing inventory."
@@ -109,7 +109,7 @@ export default function Home() {
           </div>
 
           {/* Use the ViewAllButton component here */}
-          <div className="flex justify-center mt-12">
+          <div className="flex justify-center mt-10 lg:mt-12">
             <ViewAllButton />
           </div>
         </section>
@@ -118,25 +118,25 @@ export default function Home() {
         <TestimonialCarousel />
 
         {/* Add the contact section here */}
-        <section className="text-center mt-16">
-          <h2 className="text-4xl lg:text-5xl font-semibold">Want to get in touch?</h2>
-          <p className="mt-6 text-2xl lg:text-3xl text-gray-400">
+        <section className="text-center mt-12 lg:mt-16">
+          <h2 className="text-3xl lg:text-4xl font-semibold">Want to get in touch?</h2>
+          <p className="mt-4 text-lg lg:text-2xl text-gray-400">
             Feel free to reach out—I'd love to hear from you!
           </p>
-          <div className="mt-10">
+          <div className="mt-8 lg:mt-10">
             <ContactButton /> {/* Use the new ContactButton component */}
           </div>
         </section>
       </main>
 
-      <footer className="relative text-center py-8 border-t border-gray-800 mt-16">
-        <p className="text-lg lg:text-xl">© Zach Greene - 2024</p>
+      <footer className="relative text-center py-6 border-t border-gray-800 mt-12 lg:mt-16">
+        <p className="text-md lg:text-lg">© Zach Greene - 2024</p>
 
         {/* Add favicon in the bottom left */}
         <img
           src="/icons/zicon.webp" // Use the correct path to your logo image
           alt="Z Logo"
-          className="absolute bottom-4 left-4 w-10 h-10"
+          className="absolute bottom-4 left-4 w-8 h-8 lg:w-10 lg:h-10"
         />
       </footer>
     </div>
