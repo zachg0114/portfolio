@@ -51,53 +51,53 @@ export default function TestimonialCarousel() {
           style={{ whiteSpace: 'nowrap', paddingLeft: '1rem', paddingRight: '1rem' }}
         >
           {/* Testimonial Cards */}
-          <Card className="flex-shrink-0 w-96 bg-[#1b1b1e] p-6 rounded-lg shadow-lg">
+          <Card className="flex-shrink-0 w-80 md:w-96 bg-[#1b1b1e] p-4 md:p-6 rounded-lg shadow-lg">
             <CardBody className="px-4 py-2">
-              <p className="text-lg text-white" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
+              <p className="text-sm md:text-lg text-white" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
                 "Zach's work ethic and attention to detail are unparalleled."
               </p>
             </CardBody>
             <CardFooter className="mt-4">
-              <p className="text-gray-400" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
+              <p className="text-gray-400 text-sm md:text-base" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
                 — John Doe, CEO of Example Corp.
               </p>
             </CardFooter>
           </Card>
 
-          <Card className="flex-shrink-0 w-96 bg-[#1b1b1e] p-6 rounded-lg shadow-lg">
+          <Card className="flex-shrink-0 w-80 md:w-96 bg-[#1b1b1e] p-4 md:p-6 rounded-lg shadow-lg">
             <CardBody className="px-4 py-2">
-              <p className="text-lg text-white" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
+              <p className="text-sm md:text-lg text-white" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
                 "A fantastic collaborator with a deep understanding of technology."
               </p>
             </CardBody>
             <CardFooter className="mt-4">
-              <p className="text-gray-400" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
+              <p className="text-gray-400 text-sm md:text-base" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
                 — Jane Smith, CTO of Tech Innovations
               </p>
             </CardFooter>
           </Card>
 
-          <Card className="flex-shrink-0 w-96 bg-[#1b1b1e] p-6 rounded-lg shadow-lg">
+          <Card className="flex-shrink-0 w-80 md:w-96 bg-[#1b1b1e] p-4 md:p-6 rounded-lg shadow-lg">
             <CardBody className="px-4 py-2">
-              <p className="text-lg text-white" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
+              <p className="text-sm md:text-lg text-white" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
                 "Always goes the extra mile to deliver quality work."
               </p>
             </CardBody>
             <CardFooter className="mt-4">
-              <p className="text-gray-400" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
+              <p className="text-gray-400 text-sm md:text-base" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
                 — Michael Brown, Project Manager at Creative Solutions
               </p>
             </CardFooter>
           </Card>
 
-          <Card className="flex-shrink-0 w-96 bg-[#1b1b1e] p-6 rounded-lg shadow-lg">
+          <Card className="flex-shrink-0 w-80 md:w-96 bg-[#1b1b1e] p-4 md:p-6 rounded-lg shadow-lg">
             <CardBody className="px-4 py-2">
-              <p className="text-lg text-white" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
+              <p className="text-sm md:text-lg text-white" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
                 "Zach consistently delivers high-quality results ahead of schedule."
               </p>
             </CardBody>
             <CardFooter className="mt-4">
-              <p className="text-gray-400" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
+              <p className="text-gray-400 text-sm md:text-base" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
                 — Sarah Thompson, Senior Developer at WebTech
               </p>
             </CardFooter>
