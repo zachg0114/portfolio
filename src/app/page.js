@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="bg-[#0a0c1a] text-white min-h-screen">
       {/* Header section with responsive text */}
-      <header className="flex justify-between items-center py-4 px-4 lg:py-8 lg:px-8 max-w-7xl mx-auto">
+      <header className="flex justify-between items-center py-4 lg:py-8 max-w-7xl mx-auto">
         {/* Name on the left */}
         <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-[#d8b4fe]">Zach Greene</h1>
 
@@ -26,7 +26,7 @@ export default function Home() {
         </a>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 py-8 lg:px-8 lg:py-16">
+      <main className="max-w-7xl mx-auto py-8 lg:py-16">
         {/* Main title section with responsive font sizes */}
         <header className="text-center mb-16 lg:mb-24">
           <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight">
@@ -51,7 +51,7 @@ export default function Home() {
         {/* Projects Section */}
         <section className="mt-8 lg:mt-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center">Projects</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mt-10 lg:mt-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mt-10 lg:mt-16 justify-items-center">
             <ProjectCard
               title="Stride"
               description="A sneaker reselling platform with a website and Discord bot for tracking sales and managing inventory."
