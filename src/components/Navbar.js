@@ -27,15 +27,6 @@ export default function CustomNavbar() {
           </a>
         </NavbarItem>
       </NavbarContent>
-      <NavbarMenuToggle />
-      <NavbarMenu>
-        <NavbarMenuItem>
-          <Link href="/">Home</Link>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
-          <Link href="/about">About</Link>
-        </NavbarMenuItem>
-      </NavbarMenu>
     </Navbar>
   );
 }
