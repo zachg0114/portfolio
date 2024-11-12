@@ -1,6 +1,7 @@
 // pages/about.js
 import CustomNavbar from '../components/Navbar';
 import ContactButton from '../components/ContactButton';
+import BlogCard from '../components/BlogCard';
 
 export const metadata = {
   title: 'About Zach Greene',
@@ -51,6 +52,13 @@ export default function About() {
           <p className="mt-6 text-lg text-gray-400 max-w-3xl mx-auto">
             Stay tuned for insights on technology, project journeys, and more. Exciting posts are coming soon!
           </p>
+
+          {/* Blog Post Skeletons */}
+          <div className="mt-8 space-y-6 flex flex-col items-center">
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+          </div>
         </section>
 
         {/* Contact Section */}
