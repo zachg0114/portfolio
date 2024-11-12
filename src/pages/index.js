@@ -71,9 +71,9 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section className="text-center mt-12 lg:mt-16">
-          <h2 className="text-3xl lg:text-4xl font-semibold">Want to get in touch?</h2>
-          <p className="mt-4 text-lg lg:text-2xl text-gray-400">
+        <section className="text-center mt-16 lg:mt-24">
+          <h1 className="text-4xl font-extrabold">Want to get in touch?</h1>
+          <p className="mt-6 text-lg text-gray-400 max-w-2xl mx-auto">
             Feel free to reach out—I’d love to hear from you!
           </p>
           <div className="mt-8 lg:mt-10">
