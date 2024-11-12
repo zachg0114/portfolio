@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function About() {
   return (
-    <div className="bg-[#0a0c1a] text-white min-h-screen">
+    <div className="bg-[#0a0c1a] text-white min-h-screen w-full overflow-x-hidden">
       <CustomNavbar /> {/* Navbar component */}
       
       <main className="max-w-7xl mx-auto py-8 lg:py-16 px-4 sm:px-8 space-y-16">

@@ -4,10 +4,11 @@ import Link from "next/link";
 
 export default function CustomNavbar() {
   return (
-    <Navbar isBordered maxWidth="full" className="bg-[#0a0c1a] text-white w-full">
+    <Navbar isBordered maxWidth="full" className="bg-[#0a0c1a] text-white w-full overflow-hidden">
       <NavbarBrand>
         <Link href="/">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl text-[#d8b4fe]" style={{ fontFamily: "'Dancing Script', cursive" }}>
+          {/* Reduced font size for better fit across all screen sizes */}
+          <h1 className="text-xl sm:text-2xl md:text-3xl text-[#d8b4fe]" style={{ fontFamily: "'Dancing Script', cursive" }}>
             Zachary Greene
           </h1>
         </Link>
