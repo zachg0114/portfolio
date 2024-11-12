@@ -1,8 +1,19 @@
 // pages/_app.js
-import '@/app/globals.css'; // Adjust the path based on where your globals.css is located
+import '@/app/globals.css';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Head>
+        <link 
+          href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" 
+          rel="stylesheet" 
+        />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 export default MyApp;

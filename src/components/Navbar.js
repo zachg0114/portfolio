@@ -1,5 +1,5 @@
 // components/Navbar.js
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/navbar";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/navbar";
 import Link from "next/link";
 
 export default function CustomNavbar() {
@@ -7,7 +7,10 @@ export default function CustomNavbar() {
     <Navbar isBordered maxWidth="lg" className="bg-[#0a0c1a] text-white">
       <NavbarBrand>
         <Link href="/">
-          <h1 className="text-2xl font-bold text-[#d8b4fe]">Zach Greene</h1>
+<h1 className="text-4xl text-[#d8b4fe]" style={{ fontFamily: "'Dancing Script', cursive" }}>
+  Zachary Greene
+</h1>
+
         </Link>
       </NavbarBrand>
       <NavbarContent justify="end">
