@@ -12,10 +12,10 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="bg-[#0a0c1a] text-white min-h-screen">
+    <div className="bg-[#0a0c1a] text-white min-h-screen w-full overflow-x-hidden">
       <CustomNavbar /> {/* Navbar component */}
 
-      <main className="max-w-7xl mx-auto py-8 lg:py-16">
+      <main className="w-full lg:max-w-7xl mx-auto py-8 lg:py-16 px-4 sm:px-8">
         
         {/* Main title section */}
         <section className="text-center mb-16 lg:mb-24">

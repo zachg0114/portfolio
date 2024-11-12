@@ -4,13 +4,12 @@ import Link from "next/link";
 
 export default function CustomNavbar() {
   return (
-    <Navbar isBordered maxWidth="lg" className="bg-[#0a0c1a] text-white">
+    <Navbar isBordered maxWidth="full" className="bg-[#0a0c1a] text-white w-full">
       <NavbarBrand>
         <Link href="/">
-<h1 className="text-4xl text-[#d8b4fe]" style={{ fontFamily: "'Dancing Script', cursive" }}>
-  Zachary Greene
-</h1>
-
+          <h1 className="text-2xl sm:text-3xl md:text-4xl text-[#d8b4fe]" style={{ fontFamily: "'Dancing Script', cursive" }}>
+            Zachary Greene
+          </h1>
         </Link>
       </NavbarBrand>
       <NavbarContent justify="end">
