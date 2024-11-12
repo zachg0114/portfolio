@@ -59,7 +59,7 @@ export default function TestimonialCarousel() {
             </CardBody>
             <CardFooter className="mt-4">
               <p className="text-gray-400 text-sm md:text-base" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
-                — John Doe, CEO of Example Corp.
+                — Anonymous
               </p>
             </CardFooter>
           </Card>
@@ -72,7 +72,7 @@ export default function TestimonialCarousel() {
             </CardBody>
             <CardFooter className="mt-4">
               <p className="text-gray-400 text-sm md:text-base" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
-                — Jane Smith, CTO of Tech Innovations
+                — Anonymous
               </p>
             </CardFooter>
           </Card>
@@ -85,7 +85,7 @@ export default function TestimonialCarousel() {
             </CardBody>
             <CardFooter className="mt-4">
               <p className="text-gray-400 text-sm md:text-base" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
-                — Michael Brown, Project Manager at Creative Solutions
+                — Anonymous
               </p>
             </CardFooter>
           </Card>
@@ -98,7 +98,7 @@ export default function TestimonialCarousel() {
             </CardBody>
             <CardFooter className="mt-4">
               <p className="text-gray-400 text-sm md:text-base" style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
-                — Sarah Thompson, Senior Developer at WebTech
+                — Anonymous
               </p>
             </CardFooter>
           </Card>
