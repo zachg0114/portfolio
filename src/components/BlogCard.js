@@ -14,6 +14,16 @@ export default function BlogCard({ title, summary, fullPost }) {
       <CardHeader>
         <h2 className="text-2xl font-bold text-white">{title}</h2>
       </CardHeader>
+      {expanded && (
+          <Button
+            auto
+            light
+            className="text-blue-400 text-sm"
+            onClick={toggleExpanded}
+          >
+            Show Less
+          </Button>
+        )}
       <CardBody>
         {expanded ? (
           <div className="text-gray-400 text-base space-y-4">
