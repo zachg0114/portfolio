@@ -1,20 +1,30 @@
-// pages/about.js
+import { useState } from 'react';
 import CustomNavbar from '../components/Navbar';
-import ContactButton from '../components/ContactButton';
 import BlogCard from '@/components/BlogCard';
 import ProfileCard from '../components/ProfileCard';
+import ContactModal from '../components/ContactModal';
 
 export const metadata = {
   title: 'About Zach Greene',
 };
 
 export default function About() {
+  // Separate modal state to avoid conflicts with other interactive components
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+
+  const openContactModal = () => {
+    setIsContactModalOpen(true);
+  };
+
+  const closeContactModal = () => {
+    setIsContactModalOpen(false);
+  };
+
   return (
     <div className="bg-[#0a0c1a] text-white min-h-screen">
       <CustomNavbar /> {/* Navbar component */}
 
       <main className="max-w-7xl mx-auto py-8 lg:py-16 space-y-12 px-4">
-        
         {/* Profile Card Section */}
         <section className="text-center">
           <ProfileCard
@@ -28,7 +38,7 @@ export default function About() {
           <h1 className="text-4xl font-extrabold">About Me</h1>
           <p className="mt-6 text-lg text-gray-400 max-w-3xl mx-auto">
             Hi, I’m Zachary Greene—a technology enthusiast focused on Enterprise Technology Integration and Application Development. 
-            Currently completing my Bachelor's at Penn State University, I've gained hands-on experience in developing tech solutions using Java, network security, and IT project management. 
+            Currently completing my Bachelor's at Penn State University, I've gained hands-on experience in developing tech solutions using Java, network security, and IT project management.
           </p>
           <p className="mt-4 text-lg text-gray-400 max-w-3xl mx-auto">
             My journey in tech has been marked by a passion for streamlining operations and crafting innovative, user-centered applications. 
@@ -111,10 +121,18 @@ export default function About() {
             Feel free to reach out—I’d love to hear from you!
           </p>
           <div className="mt-8 lg:mt-10">
-            <ContactButton />
+            <button
+              onClick={openContactModal}
+              className="bg-gradient-to-r from-purple-500 to-blue-500 text-white px-6 py-3 rounded-md hover:scale-105 transition-transform"
+            >
+              Contact Me
+            </button>
           </div>
         </section>
       </main>
+
+      {/* Contact Modal */}
+      {isContactModalOpen && <ContactModal onClose={closeContactModal} />}
 
       <footer className="relative text-center py-6 border-t border-gray-800 mt-12 lg:mt-16">
         <p className="text-md lg:text-lg">© Zach Greene - 2024</p>
