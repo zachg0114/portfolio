@@ -22,7 +22,7 @@ export default function CustomNavbar() {
         </NavbarItem>
         <NavbarItem>
           <a
-            href="https://drive.google.com/file/d/1llsLqF-0HTSlhaWuHKfwhS9oxJoC0lGL/view?usp=sharing"
+            href="https://drive.google.com/file/d/1fxjLNMYXmz_nkYEnqLHqEGXVwtJiV2Mz/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
