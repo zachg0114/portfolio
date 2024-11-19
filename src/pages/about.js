@@ -29,7 +29,7 @@ export default function About() {
         <section className="text-center">
           <ProfileCard
             imageSrc="/icons/profile.jpg"
-            name="Zach Greene"
+            name="Zachary Greene"
           />
         </section>
 
@@ -111,6 +111,145 @@ export default function About() {
                 </>
               }
             />
+            <BlogCard
+              title="Creating a Song Request Tool for DJs: Combining Technology and Live Performance Needs"
+              summary="Managing song requests efficiently is a game-changer for DJs who aim to balance crowd engagement with smooth transitions. In this post, I’ll share how I developed a scalable Song Request Tool designed for real-time interaction, simplicity, and enhancing live performances."
+              fullPost={
+                <>
+                  <h2 className="font-semibold mt-4">Why DJs Need Better Song Request Systems</h2>
+                  <p>
+                    For DJs, song requests are a double-edged sword. On one hand, they allow for real-time crowd engagement and create a personalized experience. On the other hand, managing requests can interrupt the flow of a set, leading to awkward transitions or unmet expectations. Traditional methods like paper slips, shouting requests, or awkward phone interactions fail to scale for modern DJs working in fast-paced, high-energy environments.
+                  </p>
+                  <p>
+                    This challenge inspired me to create a digital Song Request Tool—a solution designed to streamline the process, reduce friction, and integrate seamlessly into a DJ’s workflow.
+                  </p>
+
+                  <h2 className="font-semibold mt-4">Building the Song Request Tool: Core Features</h2>
+                  <p>
+                    The tool is built with simplicity, scalability, and usability in mind. Here are some key features that make it stand out:
+                  </p>
+                  <ul className="list-disc ml-6 text-gray-400">
+                    <li>
+                      <strong>Real-Time Requests:</strong> Guests can send song requests directly to the DJ through a mobile-friendly interface, ensuring quick communication without distractions.
+                    </li>
+                    <li>
+                      <strong>Queue Management:</strong> DJs can view, prioritize, and manage requests in an organized queue, preventing the chaos of overlapping or redundant requests.
+                    </li>
+                    <li>
+                      <strong>Auto-Downloading:</strong> The tool integrates with music libraries to automatically download requested tracks, saving DJs from scrambling to find files mid-set.
+                    </li>
+                    <li>
+                      <strong>Customization:</strong> DJs can configure parameters like request limits, genre filters, and blackout periods to maintain creative control while accommodating the crowd.
+                    </li>
+                  </ul>
+
+                  <h2 className="font-semibold mt-4">Technical Challenges and Solutions</h2>
+                  <p>
+                    Developing the Song Request Tool wasn’t without its hurdles. Here are a few challenges I faced and how I tackled them:
+                  </p>
+                  <ul className="list-disc ml-6 text-gray-400">
+                    <li>
+                      <strong>Real-Time Updates:</strong> Ensuring the request queue updated instantly for both DJs and users was a top priority. I leveraged WebSocket technology to enable live syncing, ensuring requests appeared without page refreshes or delays.
+                    </li>
+                    <li>
+                      <strong>Data Scalability:</strong> For larger events with hundreds of participants, I needed a backend system capable of handling high traffic. I built the backend using Node.js and MongoDB for lightweight, scalable performance.
+                    </li>
+                    <li>
+                      <strong>Usability Across Devices:</strong> To ensure accessibility, I designed the user interface with responsive Tailwind CSS, making it intuitive and seamless on both mobile and desktop devices.
+                    </li>
+                  </ul>
+
+                  <h2 className="font-semibold mt-4">How It Enhances Live Performances</h2>
+                  <p>
+                    The tool’s impact goes beyond convenience—it actively improves the DJing experience. By eliminating the friction of traditional request methods, DJs can focus on their artistry while building a deeper connection with their audience. The streamlined process also opens doors for additional monetization opportunities, such as premium paid requests or exclusive song shout-outs.
+                  </p>
+
+                  <h2 className="font-semibold mt-4">Conclusion: The Future of Song Requests</h2>
+                  <p>
+                    The Song Request Tool represents a blend of technology and live performance, solving a common pain point for DJs while enhancing crowd interaction. Whether you’re a DJ looking to streamline your workflow or an event organizer aiming to improve guest experience, this tool is a step forward in modern event technology.
+                  </p>
+                  <p>
+                    If you’ve worked on similar tools or have ideas for improving live performances with tech, I’d love to hear your thoughts. Let’s push the boundaries of what’s possible in the DJing world together!
+                  </p>
+                </>
+              }
+            />
+            <BlogCard
+              title="From Concept to Prototype: Redesigning the Berkshire Hathaway Website with Modern UX Principles"
+              summary="The redesign of the Berkshire Hathaway website demonstrates how modern UX principles can transform a traditional user interface into a more intuitive and engaging experience. In this post, I’ll walk through the process of conceptualizing, prototyping, and testing a complete website overhaul."
+              fullPost={
+                <>
+                  <h2 className="font-semibold mt-4">Identifying the Problem</h2>
+                  <p>
+                    The original Berkshire Hathaway website, while functional, lacked the modern design and usability that today’s users expect. Navigation was cumbersome, content was difficult to locate, and the site didn’t provide a cohesive visual identity. For a company of its stature, the website needed to reflect the brand’s professionalism and accessibility.
+                  </p>
+                  <p>
+                    Our team’s goal was to create a site that not only showcased Berkshire Hathaway’s offerings but also provided an intuitive and pleasant experience for users across all devices.
+                  </p>
+
+                  <h2 className="font-semibold mt-4">Designing with Modern UX Principles</h2>
+                  <p>
+                    The redesign process began with a focus on core UX principles:
+                  </p>
+                  <ul className="list-disc ml-6 text-gray-400">
+                    <li>
+                      <strong>User-Centered Design:</strong> We conducted interviews and usability testing to understand user pain points and expectations.
+                    </li>
+                    <li>
+                      <strong>Responsive Layout:</strong> The new design ensures a seamless experience across desktops, tablets, and mobile devices.
+                    </li>
+                    <li>
+                      <strong>Clear Visual Hierarchy:</strong> We emphasized key elements like navigation menus and calls to action while maintaining a clean, minimalist aesthetic.
+                    </li>
+                    <li>
+                      <strong>Accessibility Standards:</strong> We adhered to WCAG guidelines to ensure the site was inclusive and accessible to all users.
+                    </li>
+                  </ul>
+
+                  <h2 className="font-semibold mt-4">From Wireframes to High-Fidelity Prototypes</h2>
+                  <p>
+                    After gathering insights from stakeholders and users, we moved to the wireframing stage. Wireframes served as the blueprint for the redesign, helping us map out page layouts, navigation flows, and content placement without the distraction of color or styling.
+                  </p>
+                  <p>
+                    Once the wireframes were approved, we transitioned to high-fidelity prototypes using Figma. These prototypes incorporated Berkshire Hathaway’s brand colors, fonts, and imagery to provide a realistic preview of the final product. Prototyping also allowed us to test interactive elements like dropdown menus, carousels, and form submissions before development.
+                  </p>
+
+                  <h2 className="font-semibold mt-4">Usability Testing and Iteration</h2>
+                  <p>
+                    Usability testing was a critical step in refining the design. We invited a diverse group of participants to navigate the prototype, complete tasks, and provide feedback. Testing revealed key areas for improvement, such as:
+                  </p>
+                  <ul className="list-disc ml-6 text-gray-400">
+                    <li>
+                      Simplifying navigation for first-time users.
+                    </li>
+                    <li>
+                      Enhancing the visibility of important information, such as investment opportunities and contact details.
+                    </li>
+                    <li>
+                      Reducing page load times with optimized images and assets.
+                    </li>
+                  </ul>
+                  <p>
+                    Based on this feedback, we made iterative changes to ensure the final product met user needs and expectations.
+                  </p>
+
+                  <h2 className="font-semibold mt-4">Outcome: A Modern, User-Friendly Website</h2>
+                  <p>
+                    The redesigned Berkshire Hathaway website achieved its goal of combining form and function. With a modern aesthetic, responsive layout, and improved usability, the site now serves as a reflection of the company’s values and professionalism. Navigation is intuitive, information is easy to find, and the overall experience leaves a positive impression on users.
+                  </p>
+
+                  <h2 className="font-semibold mt-4">Conclusion: The Power of UX in Business</h2>
+                  <p>
+                    Redesigning the Berkshire Hathaway website was a rewarding challenge that highlighted the importance of modern UX principles in enhancing brand perception and user satisfaction. Whether it’s for a global corporation or a personal project, a thoughtful approach to design can make a lasting impact.
+                  </p>
+                  <p>
+                    If you’re working on a UX project or have insights into redesigning legacy websites, I’d love to hear your thoughts. Let’s collaborate and share ideas for creating better digital experiences!
+                  </p>
+                </>
+              }
+            />
+
+
           </div>
         </section>
 
