@@ -1,19 +1,24 @@
-// components/Navbar.js
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/navbar";
 import Link from "next/link";
 
 export default function CustomNavbar() {
   return (
-    <Navbar isBordered maxWidth="full" className="bg-[#0a0c1a] text-white w-full overflow-hidden">
+    <Navbar
+      isBordered
+      maxWidth="full"
+      className="bg-[#0a0c1a] text-white w-full overflow-hidden"
+    >
       <NavbarBrand>
         <Link href="/">
-          {/* Reduced font size for better fit across all screen sizes */}
-          <h1 className="text-xl sm:text-2xl md:text-3xl">
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl">
             Zachary Greene
           </h1>
         </Link>
       </NavbarBrand>
-      <NavbarContent justify="end">
+      <NavbarContent
+        justify="end"
+        className="flex-wrap space-x-2 text-sm sm:text-base"
+      >
         <NavbarItem>
           <Link href="/">Home</Link>
         </NavbarItem>
