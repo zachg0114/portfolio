@@ -10,22 +10,22 @@ export default function CustomNavbar() {
     >
       <NavbarBrand>
         <Link href="/">
-          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl">
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl whitespace-nowrap">
             Zachary Greene
           </h1>
         </Link>
       </NavbarBrand>
       <NavbarContent
         justify="end"
-        className="flex flex-wrap items-center gap-2 sm:gap-4 text-sm sm:text-base"
+        className="flex items-center gap-4 flex-nowrap overflow-x-auto whitespace-nowrap text-sm sm:text-base"
       >
         <NavbarItem>
-          <Link href="/" className="block px-2">
+          <Link href="/" className="px-2 sm:px-4">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="/about" className="block px-2">
+          <Link href="/about" className="px-2 sm:px-4">
             About
           </Link>
         </NavbarItem>
@@ -34,7 +34,7 @@ export default function CustomNavbar() {
             href="https://drive.google.com/file/d/1fxjLNMYXmz_nkYEnqLHqEGXVwtJiV2Mz/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="block px-2"
+            className="px-2 sm:px-4"
           >
             View Resume
           </a>
