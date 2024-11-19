@@ -8,7 +8,7 @@ export default function CustomNavbar() {
       <NavbarBrand>
         <Link href="/">
           {/* Reduced font size for better fit across all screen sizes */}
-          <h1 className="text-xl sm:text-2xl md:text-3xl text-[#d8b4fe]" style={{ fontFamily: "'Dancing Script', cursive" }}>
+          <h1 className="text-xl sm:text-2xl md:text-3xl">
             Zachary Greene
           </h1>
         </Link>
