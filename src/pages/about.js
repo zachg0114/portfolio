@@ -9,7 +9,6 @@ export const metadata = {
 };
 
 export default function About() {
-  // Separate modal state to avoid conflicts with other interactive components
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   const openContactModal = () => {
@@ -21,12 +20,12 @@ export default function About() {
   };
 
   return (
-    <div className="bg-[#0a0c1a] text-white min-h-screen">
+    <div className="bg-[#0a0c1a] text-white min-h-screen w-full overflow-x-hidden">
       <CustomNavbar /> {/* Navbar component */}
 
-      <main className="max-w-7xl mx-auto py-8 lg:py-16 space-y-12 px-4">
+      <main className="w-full lg:max-w-7xl mx-auto py-8 lg:py-16 px-4 sm:px-8">
         {/* Profile Card Section */}
-        <section className="text-center">
+        <section className="text-center mb-16">
           <ProfileCard
             imageSrc="/icons/profile.jpg"
             name="Zachary Greene"
@@ -34,13 +33,13 @@ export default function About() {
         </section>
 
         {/* Full Biography Section */}
-        <section className="text-center">
+        <section className="text-center mb-16">
           <h1 className="text-4xl font-extrabold">About Me</h1>
-          <p className="mt-6 text-lg text-gray-400 max-w-3xl mx-auto">
+          <p className="mt-6 text-lg sm:text-xl lg:text-2xl text-gray-400 max-w-5xl mx-auto">
             Hi, I’m Zachary Greene—a technology enthusiast focused on Enterprise Technology Integration and Application Development. 
             Currently completing my Bachelor's at Penn State University, I've gained hands-on experience in developing tech solutions using Java, network security, and IT project management.
           </p>
-          <p className="mt-4 text-lg text-gray-400 max-w-3xl mx-auto">
+          <p className="mt-4 text-lg sm:text-xl lg:text-2xl text-gray-400 max-w-5xl mx-auto">
             My journey in tech has been marked by a passion for streamlining operations and crafting innovative, user-centered applications. 
             Whether it’s automating financial systems at Select Medical, building Stride (a sneaker reselling business), or reimagining user experience for Berkshire Hathaway, 
             I approach each challenge with enthusiasm and a drive to make a meaningful impact.
@@ -48,18 +47,18 @@ export default function About() {
         </section>
 
         {/* What I Bring Section */}
-        <section className="text-center">
+        <section className="text-center mb-16">
           <h1 className="text-4xl font-extrabold">What I Bring to the Table</h1>
-          <p className="mt-6 text-lg text-gray-400 max-w-3xl mx-auto">
+          <p className="mt-6 text-lg sm:text-xl lg:text-2xl text-gray-400 max-w-5xl mx-auto">
             I combine technical expertise and leadership skills to drive measurable improvements. At Select Medical, I collaborated with cross-functional teams to automate processes, 
             bringing measurable efficiency to critical finance systems. I’m skilled at organizing and communicating within teams, emphasizing a structured and results-driven approach in every project I undertake.
           </p>
         </section>
 
         {/* Passions and Projects Section */}
-        <section className="text-center">
+        <section className="text-center mb-16">
           <h1 className="text-4xl font-extrabold">Passions and Projects</h1>
-          <p className="mt-6 text-lg text-gray-400 max-w-3xl mx-auto">
+          <p className="mt-6 text-lg sm:text-xl lg:text-2xl text-gray-400 max-w-5xl mx-auto">
             My work is driven by a love for solving real-world problems through technology. 
             From leading Penn State’s Table Tennis Club to staying active in Alpha Chi Rho, 
             I prioritize building connections and leading teams with shared goals and values. 
@@ -68,9 +67,9 @@ export default function About() {
         </section>
 
         {/* Looking Ahead Section */}
-        <section className="text-center">
+        <section className="text-center mb-16">
           <h1 className="text-4xl font-extrabold">Looking Ahead</h1>
-          <p className="mt-6 text-lg text-gray-400 max-w-3xl mx-auto">
+          <p className="mt-6 text-lg sm:text-xl lg:text-2xl text-gray-400 max-w-5xl mx-auto">
             Looking forward, I’m excited to develop further in cloud computing, data analysis, and web development. 
             My goal is to create tech solutions that streamline business processes and elevate user experiences. 
             I aim to lead impactful projects that foster collaboration and innovation in technology, making a lasting difference in the industry.
@@ -78,7 +77,7 @@ export default function About() {
         </section>
 
         {/* Blog Posts Section */}
-        <section className="text-center">
+        <section className="text-center mb-16">
           <h1 className="text-4xl font-extrabold">Blog Posts</h1>
           <BlogList />
         </section>
@@ -86,7 +85,7 @@ export default function About() {
         {/* Contact Section */}
         <section className="text-center mt-16 lg:mt-24">
           <h1 className="text-4xl font-extrabold">Want to get in touch?</h1>
-          <p className="mt-6 text-lg text-gray-400 max-w-2xl mx-auto">
+          <p className="mt-6 text-lg sm:text-xl lg:text-2xl text-gray-400 max-w-3xl mx-auto">
             Feel free to reach out—I’d love to hear from you!
           </p>
           <div className="mt-8 lg:mt-10">
@@ -100,7 +99,6 @@ export default function About() {
         </section>
       </main>
 
-      {/* Contact Modal */}
       {isContactModalOpen && <ContactModal onClose={closeContactModal} />}
 
       <footer className="relative text-center py-6 border-t border-gray-800 mt-12 lg:mt-16">
