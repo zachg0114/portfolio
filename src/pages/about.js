@@ -78,7 +78,7 @@ export default function About() {
 
         {/* Blog Posts Section */}
         <section className="text-center mb-16">
-          <h1 className="text-4xl font-extrabold">Blog Posts</h1>
+          <h1 className="text-4xl font-extrabold mb-8">Blog Posts</h1>
           <BlogList />
         </section>
 
