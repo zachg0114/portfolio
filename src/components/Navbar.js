@@ -17,15 +17,15 @@ export default function CustomNavbar() {
       </NavbarBrand>
       <NavbarContent
         justify="end"
-        className="flex-wrap space-x-2 text-sm sm:text-base"
+        className="flex flex-row items-center space-x-4 text-sm sm:text-base"
       >
-        <NavbarItem>
+        <NavbarItem className="whitespace-nowrap">
           <Link href="/">Home</Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem className="whitespace-nowrap">
           <Link href="/about">About</Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem className="whitespace-nowrap">
           <a
             href="https://drive.google.com/file/d/1fxjLNMYXmz_nkYEnqLHqEGXVwtJiV2Mz/view?usp=sharing"
             target="_blank"
