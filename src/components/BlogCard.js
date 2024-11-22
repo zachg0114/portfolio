@@ -58,7 +58,7 @@ export default function BlogCard({ title, imageSrc, summary, fullPost }) {
             </div>
           </div>
         ) : (
-          <p className="text-gray-300 font-semibold">{summary}</p>
+          <p className="text-gray-300 text-md text-center">{summary}</p>
         )}
       </CardBody>
 
