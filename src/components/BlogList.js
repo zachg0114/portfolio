@@ -121,7 +121,7 @@ export default function BlogList() {
     },
     {
       title: "From Concept to Prototype: Redesigning the Berkshire Hathaway Website with Modern UX Principles",
-      imageSrc: "/icons/newberkshire image.png",
+      imageSrc: "/icons/berkshire.png",
       summary:
         "The redesign of the Berkshire Hathaway website demonstrates how modern UX principles can transform a traditional user interface into a more intuitive and engaging experience. In this post, I’ll walk through the process of conceptualizing, prototyping, and testing a complete website overhaul.",
       fullPost: (
