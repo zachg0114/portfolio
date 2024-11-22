@@ -17,7 +17,7 @@ export default function BiographySections() {
         <>
           <p className="mt-4 text-sm sm:text-md lg:text-xl text-gray-400 max-w-5xl mx-auto">
           Hi, I’m Zachary Greene—a technology enthusiast focused on Enterprise Technology Integration and Application Development.
-            Currently completing my Bachelor's at Penn State University, I've gained hands-on experience in developing tech solutions using Java, network security, and IT project management.
+            I am currently completing my Bachelor's at The Pennsylvania State University, and have gained hands-on experience in developing tech solutions using scalable architecture and efficient system design.
           </p>
           <div className="text-center mt-6">
             <Button
@@ -33,13 +33,13 @@ export default function BiographySections() {
         <>
           <p className="mt-4 text-sm sm:text-md lg:text-xl text-gray-400 max-w-5xl mx-auto">
           Hi, I’m Zachary Greene—a technology enthusiast focused on Enterprise Technology Integration and Application Development.
-            Currently completing my Bachelor's at Penn State University, I've gained hands-on experience in developing tech solutions using Java, network security, and IT project management.
+            I am currently completing my Bachelor's at The Pennsylvania State University, and have gained hands-on experience in developing tech solutions using scalable architecture and efficient system design.
           </p>
 
           <h2 className="font-semibold mt-4 text-white text-2xl">What I Bring to the Table</h2>
           <p className="mt-4 text-sm sm:text-md lg:text-xl text-gray-400 max-w-5xl mx-auto">
-            I combine technical expertise and leadership skills to drive measurable improvements. At Select Medical, I collaborated with cross-functional teams to automate processes,
-            bringing measurable efficiency to critical finance systems. I’m skilled at organizing and communicating within teams, emphasizing a structured and results-driven approach in every project I undertake.
+            I combine my technical expertise and leadership skills to drive measurable improvements. At Select Medical, I collaborated with cross-functional teams to automate processes,
+            bringing measurable efficiency improvements to critical finance systems. I’m skilled at organizing and communicating within teams, emphasizing a structured and results-driven approach in every project I undertake.
           </p>
 
           <h2 className="font-semibold mt-4 text-white text-2xl">Passions and Projects</h2>
@@ -47,7 +47,7 @@ export default function BiographySections() {
             My work is driven by a love for solving real-world problems through technology.
             From leading Penn State’s Table Tennis Club to staying active in Alpha Chi Rho,
             I prioritize building connections and leading teams with shared goals and values.
-            My work on projects like Stride and the Berkshire Hathaway redesign has strengthened my belief in the power of community and teamwork.
+            My work on projects like Stride and the Berkshire Hathaway website redesign has reaffirmed my understanding of the benefits of teamwork.
           </p>
 
           <h2 className="font-semibold mt-4 text-white text-2xl">Looking Ahead</h2>

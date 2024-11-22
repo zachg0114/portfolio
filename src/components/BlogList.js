@@ -12,11 +12,11 @@ export default function BlogList() {
       fullPost: (
         <>
         <h2 className="font-semibold mt-4 text-white">Why Scalability Matters in Web Applications</h2>
-        <p>As applications grow in functionality and user base, scalability becomes essential to maintain performance and user experience. Next.js provides a solid framework for building scalable applications, offering features like server-side rendering (SSR), API routes, and built-in CSS and JavaScript optimization. But to truly harness Next.js’s capabilities for multi-page sites, I’ve found that a few specific strategies make a significant difference.</p>
+        <p>As applications grow in functionality and user bases become larger, scalability becomes essential to maintaining peak performance and intuitive user experience. Next.js provides a solid framework for building scalable applications, offering features like server-side rendering (SSR), API routes, and built-in CSS and JavaScript optimization. But to truly harness Next.js’s capabilities for multi-page sites, I’ve found that a few specific strategies make a significant difference.</p>
         
         <h2 className="font-semibold mt-4 text-white">Strategy 1: Leveraging Server-Side Rendering (SSR)</h2>
-        <p>One of Next.js’s biggest advantages is its server-side rendering capabilities. By rendering pages on the server instead of the client, SSR reduces the initial load time and improves SEO—key considerations for any scalable web application. With SSR, I can deliver fully rendered pages to users as requested, ensuring a faster, smoother experience, especially on content-rich pages.</p>
-        <p>In practice, I implement SSR in my multi-page applications by configuring pages to use <code>getServerSideProps</code>, which fetches data at request time. This approach keeps my application responsive even as data demands grow. <Link
+        <p>One of Next.js’s biggest advantages is its server-side rendering capabilities. By rendering pages on the server instead of the client, SSR reduces the initial load time and improves Search Engine Optimization (SEO)-key considerations for any scalable web application. With SSR, I can deliver fully rendered pages to users as requested, ensuring a faster, smoother experience, especially on pages containing lots of content.</p>
+        <p>In practice, I implement SSR in my multi-page applications by configuring pages to use <code>getServerSideProps</code>, which fetches data at request time. This approach keeps my applications responsive even as data demands grow. <Link
   href="https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props"
   target="_blank"
   className="text-[#a855f7] underline hover:text-purple-400 transition-colors"
@@ -26,7 +26,7 @@ export default function BlogList() {
         
         <h2 className="font-semibold mt-4 text-white">Strategy 2: Building Reusable Components</h2>
         <p>For any large-scale application, creating reusable components is a game-changer. Not only does this improve maintainability, but it also speeds up development time by allowing me to build UI elements once and use them throughout the application. In Next.js, I organize my components into a separate directory and structure them in a way that makes them easy to import and customize across different pages.</p>
-        <p>For example, I often create modular components like Navbar, Footer, or Card components, each with customizable props. These components handle different data and styles across the site, enabling me to build a cohesive UI while keeping the codebase clean. Reusability also allows me to quickly adapt to changes, as updates to a single component propagate throughout the application automatically.</p>
+        <p>For example, I often create modular components like Navbar, Footer, or Card components, each with customizable props. These components handle different data and styles across the site, enabling me to build a cohesive UI while keeping the codebase clean. Reusability also allows me to quickly adapt to changes, as updates to a single component are replicated throughout the application automatically.</p>
         
         <h2 className="font-semibold mt-4 text-white">Strategy 3: Optimizing API Routes for Data Flexibility</h2>
         <p>Next.js allows developers to define API routes directly in the application, which provides a flexible way to handle data fetching without relying on external server endpoints. I use API routes to keep my data handling efficient and modular, making it easy to scale the application without compromising on speed.</p>
@@ -55,7 +55,7 @@ export default function BlogList() {
         <>
                   <h2 className="font-semibold mt-4 text-white">Why DJs Need Better Song Request Systems</h2>
                   <p>
-                    For DJs, song requests are a double-edged sword. On one hand, they allow for real-time crowd engagement and create a personalized experience. On the other hand, managing requests can interrupt the flow of a set, leading to awkward transitions or unmet expectations. Traditional methods like paper slips, shouting requests, or awkward phone interactions fail to scale for modern DJs working in fast-paced, high-energy environments.
+                    For DJs, taking song requests is a double-edged sword. On one hand, they allow for real-time crowd engagement and create a personalized experience. On the other hand, managing requests can interrupt the flow of a set, leading to awkward transitions or unmet expectations. Traditional methods like passing paper slips, shouting requests, or awkward phone interactions fail to scale for modern DJs working in fast-paced, high-energy environments.
                   </p>
                   <p>
                     This challenge inspired me to create a digital Song Request Tool—a solution designed to streamline the process, reduce friction, and integrate seamlessly into a DJ’s workflow.
@@ -103,12 +103,12 @@ export default function BlogList() {
 
                   <h2 className="font-semibold mt-4 text-white">Conclusion: The Future of Song Requests</h2>
                   <p>
-                    The Song Request Tool represents a blend of technology and live performance, solving a common pain point for DJs while enhancing crowd interaction. Whether you’re a DJ looking to streamline your workflow or an event organizer aiming to improve guest experience, this tool is a step forward in modern event technology.
+                    The Song Request Tool represents a blend of technology and live performance, solving a common pain point for DJs while enhancing crowd interaction. Whether you’re a DJ looking to streamline your workflow or an event organizer aiming to improve guest experience, this tool is a step forward in modern music/event technology.
                   </p>
                   <p>
-                    If you’ve worked on similar tools or have ideas for improving live performances with tech, I’d love to hear your thoughts. Let’s push the boundaries of what’s possible in the DJing world together!
+                    If you’ve worked on similar tools or have ideas for improving live performances with tech, I’d love to hear your thoughts.
                   </p>
-                  <h2 className="font-semibold mt-4 text-white">View the project <Link
+                  <h2 className="font-semibold mt-4 text-white">View this project <Link
                       href="https://github.com/zachg0114/SongRequestTool"
                       target="_blank"
                       className="text-[#a855f7] underline hover:text-purple-400 transition-colors"
@@ -128,7 +128,7 @@ export default function BlogList() {
         <>
                   <h2 className="font-semibold mt-4 text-white">Identifying the Problem</h2>
                   <p>
-                    The original Berkshire Hathaway website, while functional, lacked the modern design and usability that today’s users expect. Navigation was cumbersome, content was difficult to locate, and the site didn’t provide a cohesive visual identity. For a company of its stature, the website needed to reflect the brand’s professionalism and accessibility.
+                    The original Berkshire Hathaway website, while functional, lacked the modern design and usability that today’s users expect in a website. Navigation was cumbersome, content was difficult to locate, and the site didn’t provide a cohesive visual identity. For a company of its stature, the website needed to reflect the brand’s professionalism and accessibility.
                   </p>
                   <p>
                     My goal was to create a site that not only showcased Berkshire Hathaway’s offerings but also provided an intuitive and pleasant experience for users across all devices.
@@ -192,7 +192,7 @@ export default function BlogList() {
                   <p>
                     If you’re working on a UX project or have insights into redesigning legacy websites, I’d love to hear your thoughts. Let’s collaborate and share ideas for creating better digital experiences!
                   </p>
-                  <h2 className="font-semibold mt-4 text-white">View the project <Link
+                  <h2 className="font-semibold mt-4 text-white">View this project <Link
                       href="https://www.figma.com/proto/d489BGItEQzQXEAghsVfG6/High-Fidelity-Prototype---Berkshire-Hathaway?node-id=1-2&starting-point-node-id=1%3A2&t=Q3nTQlpBjmApu7HC-1"
                       target="_blank"
                       className="text-[#a855f7] underline hover:text-purple-400 transition-colors"

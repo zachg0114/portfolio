@@ -31,7 +31,7 @@ export default function TestimonialCarousel() {
     };
 
     cloneElements(); // Clone the cards initially
-    const scrollInterval = setInterval(scroll, 50); // Speed of the scroll
+    const scrollInterval = setInterval(scroll, 35); // Speed of the scroll
     return () => clearInterval(scrollInterval);
   }, []);
 
