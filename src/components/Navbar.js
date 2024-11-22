@@ -6,12 +6,12 @@ export default function CustomNavbar() {
     <Navbar
       isBordered
       maxWidth="full"
-      className="bg-[#0a0c1a] text-white w-full overflow-hidden"
+      className="bg-[#BC54E3] text-white w-full overflow-hidden"
     >
       {/* Conditional rendering for the brand name */}
       <div className="hidden sm:block">
         <Link href="/">
-        <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl whitespace-nowrap font-semibold text-gray-400">
+        <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl whitespace-nowrap font-semibold text-white">
         Zachary Greene
           </h1>
         </Link>
