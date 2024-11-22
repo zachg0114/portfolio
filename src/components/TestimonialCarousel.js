@@ -42,7 +42,7 @@ export default function TestimonialCarousel() {
       {/* Container to hold both the gradient effects and the carousel */}
       <div className="relative z-[10]">
       {/* Left Fade Effect */}
-        <div className="absolute top-0 left-0 h-full w-12 bg-gradient-to-r from-[#0a0c1a] to-transparent pointer-events-none"></div>
+      <div className="absolute top-0 left-0 h-full w-12 bg-gradient-to-r from-[#0a0c1a] to-transparent z-10 pointer-events-none"></div>
 
         {/* Carousel Container */}
         <div
