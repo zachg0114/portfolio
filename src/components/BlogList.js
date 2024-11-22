@@ -5,6 +5,7 @@ export default function BlogList() {
   const blogPosts = [
     {
       title: "Building Scalable Web Applications with Next.js: My Approach to Multi-Page Websites",
+      imageSrc: "/icons/website.png",
       summary:
         "Developing scalable, multi-page applications in Next.js requires a structured approach and attention to detail. In this post, I’ll walk through three key strategies I use to ensure that my Next.js applications remain fast, flexible, and maintainable as they grow.",
       fullPost: (
@@ -32,6 +33,7 @@ export default function BlogList() {
     },
     {
       title: "Creating a Song Request Tool for DJs: Combining Technology and Live Performance Needs",
+      imageSrc: "/icons/SRTVisual.png",
       summary:
         "Managing song requests efficiently is a game-changer for DJs who aim to balance crowd engagement with smooth transitions. In this post, I’ll share how I developed a scalable Song Request Tool designed for real-time interaction, simplicity, and enhancing live performances.",
       fullPost: (
@@ -96,6 +98,7 @@ export default function BlogList() {
     },
     {
       title: "From Concept to Prototype: Redesigning the Berkshire Hathaway Website with Modern UX Principles",
+      imageSrc: "/icons/newberkshire image.png",
       summary:
         "The redesign of the Berkshire Hathaway website demonstrates how modern UX principles can transform a traditional user interface into a more intuitive and engaging experience. In this post, I’ll walk through the process of conceptualizing, prototyping, and testing a complete website overhaul.",
       fullPost: (
@@ -174,7 +177,7 @@ export default function BlogList() {
   return (
     <div className="space-y-6 flex flex-col items-center">
       {blogPosts.map((post, index) => (
-        <BlogCard key={index} title={post.title} summary={post.summary} fullPost={post.fullPost} />
+        <BlogCard key={index} title={post.title} imageSrc={post.imageSrc} summary={post.summary} fullPost={post.fullPost} />
       ))}
     </div>
   );

@@ -3,6 +3,7 @@ import CustomNavbar from '../components/Navbar';
 import ProfileCard from '../components/ProfileCard';
 import ContactModal from '../components/ContactModal';
 import BlogList from '@/components/BlogList';
+import ContactButton from '@/components/ContactButton';
 
 export const metadata = {
   title: 'About Zach Greene',
@@ -83,6 +84,7 @@ export default function About() {
         </section>
 
         {/* Contact Section */}
+        {/* 
         <section className="text-center mt-16 lg:mt-24">
           <h1 className="text-4xl font-extrabold">Want to get in touch?</h1>
           <p className="mt-6 text-lg sm:text-xl lg:text-2xl text-gray-400 max-w-3xl mx-auto">
@@ -97,6 +99,17 @@ export default function About() {
             </button>
           </div>
         </section>
+        */}
+        <section className="text-center mt-16 lg:mt-24">
+          <h1 className="text-4xl font-extrabold">Want to get in touch?</h1>
+          <p className="mt-6 text-lg text-gray-400 max-w-2xl mx-auto">
+            Feel free to reach out—I’d love to hear from you!
+          </p>
+          <div className="mt-8 lg:mt-10">
+            <ContactButton />
+          </div>
+        </section>
+
       </main>
 
       {isContactModalOpen && <ContactModal onClose={closeContactModal} />}

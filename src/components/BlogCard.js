@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Card, CardHeader, CardBody, Button } from "@nextui-org/react";
+import Image from 'next/image';
 
 export default function BlogCard({ title, imageSrc, summary, fullPost }) {
   const [expanded, setExpanded] = useState(false);
@@ -16,11 +17,15 @@ export default function BlogCard({ title, imageSrc, summary, fullPost }) {
 
       {/* Image below the title */}
       <div className="my-4">
-        <img
-          src={imageSrc}
-          alt={`${title} image`}
-          className="w-full rounded-md object-cover"
-        />
+      <Image
+        src={imageSrc}
+        alt={`${title} image`}
+        layout="responsive"
+        width={16} // Aspect ratio width (e.g., 16:9)
+        height={9} // Aspect ratio height
+        className="rounded-md object-cover"
+      />
+
         {/* "Show Less" button below the image when expanded */}
         {expanded && (
           <div className="text-center mt-4">
