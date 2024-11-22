@@ -10,7 +10,7 @@ export default function ProfileCard({ imageSrc, name }) {
           src={imageSrc}
         />
       </div>
-      <h2 className="text-4xl font-bold mt-6 text-white">{name}</h2>
+      <h2 className="text-4xl font-bold mt-6 text-gradient bg-gradient-to-r from-[#d8b4fe] via-[#a855f7] to-[#7e22ce] bg-clip-text text-transparent">{name}</h2>
     </div>
   );
 }
