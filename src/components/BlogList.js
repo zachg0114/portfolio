@@ -28,6 +28,7 @@ export default function BlogList() {
         <h2 className="font-semibold mt-4 text-white">Conclusion: Taking a Scalable Approach to Web Development</h2>
         <p>In my journey building multi-page applications with Next.js, I’ve found that prioritizing server-side rendering, reusable components, and flexible API routes has allowed me to scale applications without sacrificing performance. As web applications continue to evolve, scalability will remain a key concern for developers, and Next.js offers powerful tools to meet this demand.</p>
         <p>If you’re also working with Next.js or exploring scalable architectures, I’d love to hear your thoughts or tips! Feel free to connect with me or share your experiences.</p>
+        <h2 className="font-semibold mt-4 text-white">View the code for this scalable web app <a href="https://github.com/zachg0114/portfolio" target="_blank" className="text-blue-400 underline">here</a></h2>
       </>
       ),
     },
@@ -109,7 +110,7 @@ export default function BlogList() {
                     The original Berkshire Hathaway website, while functional, lacked the modern design and usability that today’s users expect. Navigation was cumbersome, content was difficult to locate, and the site didn’t provide a cohesive visual identity. For a company of its stature, the website needed to reflect the brand’s professionalism and accessibility.
                   </p>
                   <p>
-                    Our team’s goal was to create a site that not only showcased Berkshire Hathaway’s offerings but also provided an intuitive and pleasant experience for users across all devices.
+                    My goal was to create a site that not only showcased Berkshire Hathaway’s offerings but also provided an intuitive and pleasant experience for users across all devices.
                   </p>
 
                   <h2 className="font-semibold mt-4 text-white">Designing with Modern UX Principles</h2>
@@ -118,30 +119,30 @@ export default function BlogList() {
                   </p>
                   <ul className="list-disc ml-6 text-gray-400">
                     <li>
-                      <strong>User-Centered Design:</strong> We conducted interviews and usability testing to understand user pain points and expectations.
+                      <strong>User-Centered Design:</strong> I conducted interviews and usability testing to understand user pain points and expectations.
                     </li>
                     <li>
                       <strong>Responsive Layout:</strong> The new design ensures a seamless experience across desktops, tablets, and mobile devices.
                     </li>
                     <li>
-                      <strong>Clear Visual Hierarchy:</strong> We emphasized key elements like navigation menus and calls to action while maintaining a clean, minimalist aesthetic.
+                      <strong>Clear Visual Hierarchy:</strong> I emphasized key elements like navigation menus and calls to action while maintaining a clean, minimalist aesthetic.
                     </li>
                     <li>
-                      <strong>Accessibility Standards:</strong> We adhered to WCAG guidelines to ensure the site was inclusive and accessible to all users.
+                      <strong>Accessibility Standards:</strong> I adhered to WCAG guidelines to ensure the site was inclusive and accessible to all users.
                     </li>
                   </ul>
 
                   <h2 className="font-semibold mt-4 text-white">From Wireframes to High-Fidelity Prototypes</h2>
                   <p>
-                    After gathering insights from stakeholders and users, we moved to the wireframing stage. Wireframes served as the blueprint for the redesign, helping us map out page layouts, navigation flows, and content placement without the distraction of color or styling.
+                    After gathering insights from stakeholders and users, I moved to the wireframing stage. Wireframes served as the blueprint for the redesign, helping us map out page layouts, navigation flows, and content placement without the distraction of color or styling.
                   </p>
                   <p>
-                    Once the wireframes were approved, we transitioned to high-fidelity prototypes using Figma. These prototypes incorporated Berkshire Hathaway’s brand colors, fonts, and imagery to provide a realistic preview of the final product. Prototyping also allowed us to test interactive elements like dropdown menus, carousels, and form submissions before development.
+                    Once the wireframes were approved, I transitioned to a high-fidelity prototypes using Figma. These prototypes incorporated Berkshire Hathaway’s brand colors, fonts, and imagery to provide a realistic preview of the final product. Prototyping also allowed me to test interactive elements like dropdown menus, carousels, and form submissions before development.
                   </p>
 
                   <h2 className="font-semibold mt-4 text-white">Usability Testing and Iteration</h2>
                   <p>
-                    Usability testing was a critical step in refining the design. We invited a diverse group of participants to navigate the prototype, complete tasks, and provide feedback. Testing revealed key areas for improvement, such as:
+                    Usability testing was a critical step in refining the design. I invited a diverse group of participants to navigate the prototype, complete tasks, and provide feedback. Testing revealed key areas for improvement, such as:
                   </p>
                   <ul className="list-disc ml-6 text-gray-400">
                     <li>
@@ -155,7 +156,7 @@ export default function BlogList() {
                     </li>
                   </ul>
                   <p>
-                    Based on this feedback, we made iterative changes to ensure the final product met user needs and expectations.
+                    Based on this feedback, I made iterative changes to ensure the final product met user needs and expectations.
                   </p>
 
                   <h2 className="font-semibold mt-4 text-white">Outcome: A Modern, User-Friendly Website</h2>
