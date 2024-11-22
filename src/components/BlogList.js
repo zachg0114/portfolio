@@ -93,6 +93,7 @@ export default function BlogList() {
                   <p>
                     If you’ve worked on similar tools or have ideas for improving live performances with tech, I’d love to hear your thoughts. Let’s push the boundaries of what’s possible in the DJing world together!
                   </p>
+                  <h2 className="font-semibold mt-4 text-white"><a href="https://github.com/zachg0114/SongRequestTool" target="_blank" className="text-blue-400 underline">View the project here</a></h2>
                 </>
       ),
     },
@@ -169,6 +170,7 @@ export default function BlogList() {
                   <p>
                     If you’re working on a UX project or have insights into redesigning legacy websites, I’d love to hear your thoughts. Let’s collaborate and share ideas for creating better digital experiences!
                   </p>
+                  <h2 className="font-semibold mt-4 text-white"><a href="https://www.figma.com/proto/d489BGItEQzQXEAghsVfG6/High-Fidelity-Prototype---Berkshire-Hathaway?node-id=1-2&starting-point-node-id=1%3A2&t=Q3nTQlpBjmApu7HC-1" target="_blank" className="text-blue-400 underline">View the project here</a></h2>
                 </>
       ),
     },
