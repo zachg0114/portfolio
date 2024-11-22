@@ -10,7 +10,7 @@ export default function BlogCard({ title, imageSrc, summary, fullPost }) {
   };
 
   return (
-    <Card className="w-full max-w-4xl mx-auto bg-[#1a1c2a] p-6 rounded-lg shadow-md">
+    <Card className="w-full max-w-4xl mx-auto bg-[#1b1b1e] p-6 rounded-lg shadow-md">
       <CardHeader>
         <h2 className="text-2xl font-bold text-white">{title}</h2>
       </CardHeader>
@@ -46,11 +46,11 @@ export default function BlogCard({ title, imageSrc, summary, fullPost }) {
           <div className="text-gray-400 text-base space-y-4">
             {fullPost}
             {/* "Show Less" button at the bottom of expanded content */}
-            <div className="text-center mt-6">
-              <Button
+            <div className="text-center mt-6 flex justify-center">
+            <Button
                 auto
                 light
-                className="bg-gradient-to-r from-purple-500 to-blue-500 text-white px-4 py-2 rounded-md"
+                className="inline-block bg-[#a855f7] text-white text-lg px-6 py-3 rounded-md hover:bg-purple-500 transition duration-300 flex items-center justify-center"
                 onClick={toggleExpanded}
               >
                 Show Less
@@ -64,12 +64,12 @@ export default function BlogCard({ title, imageSrc, summary, fullPost }) {
 
       {/* Read More button (only visible when collapsed) */}
       {!expanded && (
-        <div className="text-center mt-4">
+        <div className="text-center mt-4 flex justify-center">
           <Button
             color="primary"
             onClick={toggleExpanded}
-            className="bg-gradient-to-r from-purple-500 to-blue-500 text-white px-4 py-2 rounded-md"
-          >
+            className="inline-block bg-[#a855f7] text-white text-lg px-6 py-3 rounded-md hover:bg-purple-500 transition duration-300 flex items-center justify-center"
+            >
             Read More
           </Button>
         </div>

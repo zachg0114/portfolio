@@ -11,7 +11,7 @@ export default function CustomNavbar() {
       {/* Conditional rendering for the brand name */}
       <div className="hidden sm:block">
         <Link href="/">
-          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl whitespace-nowrap">
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl whitespace-nowrap font-semibold">
             Zachary Greene
           </h1>
         </Link>

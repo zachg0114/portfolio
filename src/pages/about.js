@@ -27,12 +27,20 @@ export default function About() {
 
       <main className="w-full lg:max-w-7xl mx-auto py-8 lg:py-16 px-4 sm:px-8">
         {/* Profile Card Section */}
-        <section className="text-center mb-16">
+        <section className="text-center mb-4">
           <ProfileCard
             imageSrc="/icons/profile.jpg"
             name="Zachary Greene"
           />
         </section>
+        <div className="flex justify-center space-x-4 mb-16">
+            <a href="https://github.com/zachg0114" target="_blank" rel="noopener noreferrer">
+              <img src="/icons/github.svg" alt="GitHub" className="w-10 h-10" />
+            </a>
+            <a href="https://www.linkedin.com/in/zachary-greene-817237224/" target="_blank" rel="noopener noreferrer">
+              <img src="/icons/linkedin.svg" alt="LinkedIn" className="w-10 h-10" />
+            </a>
+          </div>
 
         {/* Full Biography Section */}
         <section className="text-center mb-16">
