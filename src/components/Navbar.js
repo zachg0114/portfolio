@@ -4,15 +4,15 @@ import Link from "next/link";
 export default function CustomNavbar() {
   return (
     <Navbar
-      isBordered
+      isBordered={false} // Remove the border to eliminate the white line
       maxWidth="full"
-      className="bg-[#964bde] text-white w-full overflow-hidden"
+      className="bg-gradient-to-r from-[#964bde] to-[#532299] text-white w-full overflow-hidden"
     >
       {/* Conditional rendering for the brand name */}
       <div className="hidden sm:block">
         <Link href="/">
-        <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl whitespace-nowrap font-semibold text-white">
-        Zachary Greene
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl whitespace-nowrap font-semibold text-white">
+            Zachary Greene
           </h1>
         </Link>
       </div>
