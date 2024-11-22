@@ -44,7 +44,8 @@ export default function About() {
           </div>
 
         {/* Full Biography Section */}
-        <section className="text-center mb-16">
+        <section className="text-center mb-8">
+        <h1 className="text-4xl font-extrabold text-white mb-8">Biography</h1>
           <BiographySections />
         </section>
 
