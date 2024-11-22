@@ -3,6 +3,7 @@ import CustomNavbar from '../components/Navbar';
 import ProfileCard from '../components/ProfileCard';
 import ContactModal from '../components/ContactModal';
 import BlogList from '@/components/BlogList';
+import ScrollToTopButton from '../components/ScrollToTopButton';
 import ContactButton from '@/components/ContactButton';
 
 export const metadata = {
@@ -122,6 +123,8 @@ export default function About() {
           className="absolute bottom-4 left-4 w-8 h-8 lg:w-10 lg:h-10"
         />
       </footer>
+
+      <ScrollToTopButton />
     </div>
   );
 }

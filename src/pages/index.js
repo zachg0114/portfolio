@@ -5,6 +5,7 @@ import ProjectCard from '../components/ProjectCard';
 import ViewAllButton from '../components/ViewAllButton';
 import ContactButton from '../components/ContactButton';
 import TestimonialCarousel from '../components/TestimonialCarousel';
+import ScrollToTopButton from '@/components/ScrollToTopButton';
 
 export const metadata = {
   title: 'Zach Greene - Portfolio',
@@ -107,6 +108,8 @@ export default function Home() {
           className="absolute bottom-4 left-4 w-8 h-8 lg:w-10 lg:h-10"
         />
       </footer>
+
+      <ScrollToTopButton />
     </div>
   );
 }
