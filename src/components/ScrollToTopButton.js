@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 export default function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Show button when user scrolls down
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.scrollY > 300) {
@@ -14,28 +13,24 @@ export default function ScrollToTopButton() {
     };
 
     window.addEventListener('scroll', toggleVisibility);
-    return () => {
-      window.removeEventListener('scroll', toggleVisibility);
-    };
+    return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
 
-  // Scroll to top handler
-  const handleScrollToTop = () => {
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', // Smooth scrolling
+      behavior: 'smooth',
     });
   };
 
   return (
-    isVisible && (
-      <button
-        onClick={handleScrollToTop}
-        className="fixed bottom-8 right-8 bg-purple-600 text-black p-3 rounded-full shadow-lg hover:bg-purple-700 focus:outline-none transition-transform transform hover:scale-105"
-        aria-label="Scroll to top"
-      >
-        ↑
-      </button>
-    )
+    <button
+      onClick={scrollToTop}
+      className={`fixed bottom-8 right-8 bg-purple-600 text-white p-4 rounded-full shadow-md hover:bg-purple-700 z-[100] 
+        transform transition-all duration-300 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90 pointer-events-none'}`}
+      aria-label="Scroll to top"
+    >
+      ↑
+    </button>
   );
 }

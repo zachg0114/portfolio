@@ -40,9 +40,9 @@ export default function TestimonialCarousel() {
       <h2 className="text-3xl font-semibold text-center mb-8">What People Are Saying</h2>
 
       {/* Container to hold both the gradient effects and the carousel */}
-      <div className="relative">
-        {/* Left Fade Effect */}
-        <div className="absolute top-0 left-0 h-full w-12 bg-gradient-to-r from-[#0a0c1a] to-transparent z-10 pointer-events-none"></div>
+      <div className="relative z-[10]">
+      {/* Left Fade Effect */}
+        <div className="absolute top-0 left-0 h-full w-12 bg-gradient-to-r from-[#0a0c1a] to-transparent pointer-events-none"></div>
 
         {/* Carousel Container */}
         <div
@@ -105,8 +105,8 @@ export default function TestimonialCarousel() {
         </div>
 
         {/* Right Fade Effect */}
-        <div className="absolute top-0 right-0 h-full w-12 bg-gradient-to-l from-[#0a0c1a] to-transparent z-10 pointer-events-none"></div>
-      </div>
+        <div className="absolute top-0 right-0 h-full w-12 bg-gradient-to-l from-[#0a0c1a] to-transparent pointer-events-none"></div>
+        </div>
     </section>
   );
 }
