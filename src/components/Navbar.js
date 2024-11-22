@@ -6,7 +6,7 @@ export default function CustomNavbar() {
     <Navbar
       isBordered
       maxWidth="full"
-      className="bg-[#BC54E3] text-white w-full overflow-hidden"
+      className="bg-[#964bde] text-white w-full overflow-hidden"
     >
       {/* Conditional rendering for the brand name */}
       <div className="hidden sm:block">
