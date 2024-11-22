@@ -54,7 +54,7 @@ export default function Home() {
                   <p className="mb-6">Built into a five-figure business, Stride played a significant role in helping users boost their revenue by offering advanced features such as sales tracking, profit analysis, and real-time market data. The platform became a trusted resource within the sneaker reselling world, enabling users to make informed decisions, streamline their processes, and grow their businesses. The combination of a user-friendly interface, powerful functionality, and the flexibility of Discord integration made Stride an invaluable tool for the reselling community.</p>
                 </>
               }
-              tags={['HTML', 'React', 'JavaScript']}
+              tags={['HTML', 'React', 'JavaScript', 'Python']}
               projectLink="https://github.com/StrideLLC/stridesite"
             />
 
