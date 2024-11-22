@@ -1,5 +1,6 @@
 // components/BlogList.js
 import BlogCard from "@/components/BlogCard";
+import Link from "next/link";
 
 export default function BlogList() {
   const blogPosts = [
@@ -15,7 +16,13 @@ export default function BlogList() {
         
         <h2 className="font-semibold mt-4 text-white">Strategy 1: Leveraging Server-Side Rendering (SSR)</h2>
         <p>One of Next.js’s biggest advantages is its server-side rendering capabilities. By rendering pages on the server instead of the client, SSR reduces the initial load time and improves SEO—key considerations for any scalable web application. With SSR, I can deliver fully rendered pages to users as requested, ensuring a faster, smoother experience, especially on content-rich pages.</p>
-        <p>In practice, I implement SSR in my multi-page applications by configuring pages to use <code>getServerSideProps</code>, which fetches data at request time. This approach keeps my application responsive even as data demands grow. <a href="https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props" target="_blank" className="text-blue-400 underline">Next.js’s server-side rendering documentation</a> provides an in-depth guide for more information.</p>
+        <p>In practice, I implement SSR in my multi-page applications by configuring pages to use <code>getServerSideProps</code>, which fetches data at request time. This approach keeps my application responsive even as data demands grow. <Link
+  href="https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props"
+  target="_blank"
+  className="text-[#a855f7] underline hover:text-purple-400 transition-colors"
+>
+  Next.js’s server-side rendering documentation
+</Link> provides an in-depth guide for more information.</p>
         
         <h2 className="font-semibold mt-4 text-white">Strategy 2: Building Reusable Components</h2>
         <p>For any large-scale application, creating reusable components is a game-changer. Not only does this improve maintainability, but it also speeds up development time by allowing me to build UI elements once and use them throughout the application. In Next.js, I organize my components into a separate directory and structure them in a way that makes them easy to import and customize across different pages.</p>
@@ -28,7 +35,14 @@ export default function BlogList() {
         <h2 className="font-semibold mt-4 text-white">Conclusion: Taking a Scalable Approach to Web Development</h2>
         <p>In my journey building multi-page applications with Next.js, I’ve found that prioritizing server-side rendering, reusable components, and flexible API routes has allowed me to scale applications without sacrificing performance. As web applications continue to evolve, scalability will remain a key concern for developers, and Next.js offers powerful tools to meet this demand.</p>
         <p>If you’re also working with Next.js or exploring scalable architectures, I’d love to hear your thoughts or tips! Feel free to connect with me or share your experiences.</p>
-        <h2 className="font-semibold mt-4 text-white">View the code for this scalable web app <a href="https://github.com/zachg0114/portfolio" target="_blank" className="text-blue-400 underline">here</a></h2>
+        <h2 className="font-semibold mt-4 text-white">View the code for this scalable web app <Link
+            href="https://github.com/zachg0114/portfolio"
+            target="_blank"
+            className="text-[#a855f7] underline hover:text-purple-400 transition-colors"
+          >
+            here
+          </Link>
+        </h2>
       </>
       ),
     },
@@ -94,7 +108,14 @@ export default function BlogList() {
                   <p>
                     If you’ve worked on similar tools or have ideas for improving live performances with tech, I’d love to hear your thoughts. Let’s push the boundaries of what’s possible in the DJing world together!
                   </p>
-                  <h2 className="font-semibold mt-4 text-white"><a href="https://github.com/zachg0114/SongRequestTool" target="_blank" className="text-blue-400 underline">View the project here</a></h2>
+                  <h2 className="font-semibold mt-4 text-white">View the project <Link
+                      href="https://github.com/zachg0114/SongRequestTool"
+                      target="_blank"
+                      className="text-[#a855f7] underline hover:text-purple-400 transition-colors"
+                    >
+                      here
+                    </Link>
+                  </h2>
                 </>
       ),
     },
@@ -171,8 +192,14 @@ export default function BlogList() {
                   <p>
                     If you’re working on a UX project or have insights into redesigning legacy websites, I’d love to hear your thoughts. Let’s collaborate and share ideas for creating better digital experiences!
                   </p>
-                  <h2 className="font-semibold mt-4 text-white"><a href="https://www.figma.com/proto/d489BGItEQzQXEAghsVfG6/High-Fidelity-Prototype---Berkshire-Hathaway?node-id=1-2&starting-point-node-id=1%3A2&t=Q3nTQlpBjmApu7HC-1" target="_blank" className="text-blue-400 underline">View the project here</a></h2>
-                </>
+                  <h2 className="font-semibold mt-4 text-white">View the project <Link
+                      href="https://www.figma.com/proto/d489BGItEQzQXEAghsVfG6/High-Fidelity-Prototype---Berkshire-Hathaway?node-id=1-2&starting-point-node-id=1%3A2&t=Q3nTQlpBjmApu7HC-1"
+                      target="_blank"
+                      className="text-[#a855f7] underline hover:text-purple-400 transition-colors"
+                    >
+                      here
+                    </Link>
+                  </h2>                </>
       ),
     },
   ];
