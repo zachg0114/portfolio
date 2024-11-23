@@ -128,7 +128,13 @@ export default function BlogList() {
         <>
                   <h2 className="font-semibold mt-4 text-white">Identifying the Problem</h2>
                   <p>
-                    The original Berkshire Hathaway website, while functional, lacked the modern design and usability that today’s users expect in a website. Navigation was cumbersome, content was difficult to locate, and the site didn’t provide a cohesive visual identity. For a company of its stature, the website needed to reflect the brand’s professionalism and accessibility.
+                    The <Link
+        href="https://www.berkshirehathaway.com/"
+        target="_blank"
+        className="text-[#a855f7] underline hover:text-purple-400 transition-colors"
+      >
+        original Berkshire Hathaway website
+      </Link>, while functional, lacked the modern design and usability that today’s users expect in a website. Navigation was cumbersome, content was difficult to locate, and the site didn’t provide a cohesive visual identity. For a company of its stature, the website needed to reflect the brand’s professionalism and accessibility.
                   </p>
                   <p>
                     My goal was to create a site that not only showcased Berkshire Hathaway’s offerings but also provided an intuitive and pleasant experience for users across all devices.
