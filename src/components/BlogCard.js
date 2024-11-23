@@ -45,7 +45,7 @@ export default function BlogCard({ title, imageSrc, summary, fullPost }) {
           style={{
             height: `${height}px`,
             overflow: "hidden",
-            transition: "height 0.5s ease, opacity 0.5s ease",
+            transition: "height 1s ease, opacity 1s ease", // Increased duration to 1 second
             opacity: expanded ? 1 : 0,
           }}
         >
