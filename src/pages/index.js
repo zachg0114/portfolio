@@ -1,5 +1,6 @@
 // pages/index.js
 
+import { useState } from "react";
 import CustomNavbar from '../components/Navbar';
 import ProjectCard from '../components/ProjectCard';
 import ViewAllButton from '../components/ViewAllButton';
@@ -7,12 +8,16 @@ import ContactButton from '../components/ContactButton';
 import TestimonialCarousel from '../components/TestimonialCarousel';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import RightDrawer from '@/components/RightDrawer';
+import ContactModal from '@/components/ContactModal';
 
 export const metadata = {
   title: 'Zach Greene - Portfolio',
 };
 
 export default function Home() {
+  // State for managing modal visibility
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className="bg-[#0a0c1a] text-white min-h-screen w-full overflow-x-hidden">
       <RightDrawer /> {/* Replace CustomNavbar with RightDrawer */}
@@ -104,7 +109,12 @@ export default function Home() {
             Feel free to reach out—I’d love to hear from you!
           </p>
           <div className="mt-8 lg:mt-10">
-            <ContactButton />
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-4 py-2 rounded-md"
+            >
+              Contact Me
+            </button>
           </div>
         </section>
       </main>
@@ -118,6 +128,10 @@ export default function Home() {
         />
       </footer>
 
+      <ContactModal
+        isOpen={isModalOpen}
+        onOpenChange={() => setIsModalOpen(false)}
+      />
       <ScrollToTopButton />
     </div>
   );
