@@ -16,11 +16,11 @@ export default function RightDrawer() {
     setIsOpen(open);
   };
 
-  // Define the menu items with correct page links
+  // Define the menu items with correct page links and targets
   const menuItems = [
     { text: 'Home', link: '/' },
     { text: 'About', link: '/about' },
-    { text: 'My Resume', link: 'https://drive.google.com/file/d/1fxjLNMYXmz_nkYEnqLHqEGXVwtJiV2Mz/view?usp=sharing' },
+    { text: 'My Resume', link: 'https://drive.google.com/file/d/1fxjLNMYXmz_nkYEnqLHqEGXVwtJiV2Mz/view?usp=sharing', target: '_blank' },
   ];
 
   return (
@@ -107,6 +107,8 @@ export default function RightDrawer() {
               component="a"
               href={item.link}
               key={index}
+              target={item.target || '_self'} // Add target attribute for opening in a new tab
+              rel={item.target === '_blank' ? 'noopener noreferrer' : undefined} // Add rel for security when target is _blank
               onClick={() => setIsOpen(false)} // Close the drawer when an item is clicked
             >
               <ListItemText primary={item.text} />
