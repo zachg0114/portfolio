@@ -6,6 +6,7 @@ import BlogList from '@/components/BlogList';
 import ScrollToTopButton from '../components/ScrollToTopButton';
 import ContactButton from '@/components/ContactButton';
 import BiographySections from '@/components/BiographySections';
+import RightDrawer from '@/components/RightDrawer';
 
 export const metadata = {
   title: 'About Zach Greene',
@@ -24,8 +25,7 @@ export default function About() {
 
   return (
     <div className="bg-[#0a0c1a] text-white min-h-screen w-full overflow-x-hidden">
-      <CustomNavbar /> {/* Navbar component */}
-
+      <RightDrawer /> {/* Replace CustomNavbar with RightDrawer */}
       <main className="w-full lg:max-w-7xl mx-auto py-8 lg:py-16 px-4 sm:px-8">
         {/* Profile Card Section */}
         <section className="text-center mb-4">

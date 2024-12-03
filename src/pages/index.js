@@ -6,6 +6,7 @@ import ViewAllButton from '../components/ViewAllButton';
 import ContactButton from '../components/ContactButton';
 import TestimonialCarousel from '../components/TestimonialCarousel';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
+import RightDrawer from '@/components/RightDrawer';
 
 export const metadata = {
   title: 'Zach Greene - Portfolio',
@@ -14,9 +15,9 @@ export const metadata = {
 export default function Home() {
   return (
     <div className="bg-[#0a0c1a] text-white min-h-screen w-full overflow-x-hidden">
-      <CustomNavbar /> {/* Navbar component */}
+      <RightDrawer /> {/* Replace CustomNavbar with RightDrawer */}
 
-      <main className="w-full lg:max-w-7xl mx-auto py-8 lg:py-16 px-4 sm:px-8">
+      <main className="w-full lg:max-w-7xl mx-auto py-8 mt-4 lg:py-16 px-4 sm:px-8">
         
         {/* Main title section */}
         <section className="text-center mb-16 lg:mb-24">
