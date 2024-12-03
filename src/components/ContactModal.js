@@ -19,7 +19,7 @@ export default function ContactModal({ isOpen, onOpenChange }) {
   const [success, setSuccess] = useState(false);
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
+    e.preventDefault(); // Prevent default form submission
     setLoading(true);
 
     const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
@@ -28,8 +28,8 @@ export default function ContactModal({ isOpen, onOpenChange }) {
 
     const templateParams = {
       user_email: email,
-      subject,
-      message,
+      subject: subject,
+      message: message,
     };
 
     try {
@@ -40,7 +40,7 @@ export default function ContactModal({ isOpen, onOpenChange }) {
       setMessage("");
     } catch (error) {
       console.error("Failed to send email:", error);
-      alert("Something went wrong. Please try again.");
+      alert("An error occurred while sending the email. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -52,15 +52,20 @@ export default function ContactModal({ isOpen, onOpenChange }) {
       onOpenChange={onOpenChange}
       backdrop="blur"
       classNames={{
-        base: "z-50 bg-black/50",
+        base: "z-50 bg-gray-900 text-white rounded-lg",
       }}
     >
       <ModalContent>
-        <div className="rounded-lg bg-gray-900 text-white p-6">
-          <ModalHeader className="text-2xl font-semibold">Contact Me</ModalHeader>
+        <div className="p-6">
+          <ModalHeader className="text-2xl font-semibold text-center">
+            Contact Me
+          </ModalHeader>
           <ModalBody>
             {!success ? (
-              <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
+              <form
+                className="flex flex-col gap-4"
+                onSubmit={handleSubmit}
+              >
                 <div>
                   <label className="block text-gray-400 text-sm mb-1">Email</label>
                   <Input
@@ -69,7 +74,7 @@ export default function ContactModal({ isOpen, onOpenChange }) {
                     placeholder="Enter your email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="rounded-lg"
+                    className="rounded-lg bg-gray-800 text-white border-none"
                   />
                 </div>
                 <div>
@@ -80,7 +85,7 @@ export default function ContactModal({ isOpen, onOpenChange }) {
                     placeholder="Enter the subject"
                     value={subject}
                     onChange={(e) => setSubject(e.target.value)}
-                    className="rounded-lg"
+                    className="rounded-lg bg-gray-800 text-white border-none"
                   />
                 </div>
                 <div>
@@ -91,28 +96,8 @@ export default function ContactModal({ isOpen, onOpenChange }) {
                     placeholder="Write your message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                    className="rounded-lg"
+                    className="rounded-lg bg-gray-800 text-white border-none"
                   />
-                </div>
-                <div className="flex justify-end gap-4 mt-4">
-                  <Button
-                    auto
-                    flat
-                    color="error"
-                    onPress={onOpenChange}
-                    className="rounded-lg"
-                  >
-                    Cancel
-                  </Button>
-                  <Button
-                    auto
-                    color="primary"
-                    disabled={!email || !subject || !message || loading}
-                    type="submit" // Set type to submit for proper form behavior
-                    className="rounded-lg"
-                  >
-                    {loading ? "Sending..." : "Send Message"}
-                  </Button>
                 </div>
               </form>
             ) : (
@@ -121,9 +106,36 @@ export default function ContactModal({ isOpen, onOpenChange }) {
               </div>
             )}
           </ModalBody>
-          <ModalFooter>
-            {success && (
-              <Button auto onPress={onOpenChange} color="success" className="rounded-lg">
+          <ModalFooter className="flex justify-end">
+            {!success ? (
+              <>
+                <Button
+                  auto
+                  flat
+                  color="error"
+                  onPress={onOpenChange}
+                  className="rounded-lg"
+                >
+                  Cancel
+                </Button>
+                <Button
+                  auto
+                  color="primary"
+                  disabled={!email || !subject || !message || loading}
+                  type="submit"
+                  className="rounded-lg"
+                  onClick={handleSubmit}
+                >
+                  {loading ? "Sending..." : "Send Message"}
+                </Button>
+              </>
+            ) : (
+              <Button
+                auto
+                onPress={onOpenChange}
+                color="success"
+                className="rounded-lg"
+              >
                 Close
               </Button>
             )}
