@@ -28,6 +28,7 @@ export default function ContactModal({ isOpen, onOpenChange }) {
 
     const templateParams = {
       user_email: email,
+      reply_to: email,
       subject: subject,
       message: message,
     };
