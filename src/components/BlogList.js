@@ -8,7 +8,7 @@ export default function BlogList() {
       title: "Building Scalable Web Applications with Next.js: My Approach to Multi-Page Websites",
       imageSrc: "/icons/website.png",
       summary:
-        "Developing scalable, multi-page applications in Next.js requires a structured approach and attention to detail. In this post, I’ll walk through three key strategies I use to ensure that my Next.js applications remain fast, flexible, and maintainable as they grow.",
+        "Developing scalable, multi-page applications in Next.js requires a structured approach and attention to detail. In this post, I’ll walk through three key strategies I use to ensure that my Next.js applications remain fast, flexible, and maintainable as they grow. I’ll also share insights on optimizing server-side rendering and static site generation for better performance. By the end, you’ll have practical tips to enhance your development workflow and build robust, user-friendly web applications with Next.js.",
       fullPost: (
         <>
         <h2 className="font-semibold mt-4 text-white">Why Scalability Matters in Web Applications</h2>
@@ -50,7 +50,7 @@ export default function BlogList() {
       title: "Creating a Song Request Tool for DJs: Combining Technology and Live Performance Needs",
       imageSrc: "/icons/SRTVisual.png",
       summary:
-        "Managing song requests efficiently is a game-changer for DJs who aim to balance crowd engagement with smooth transitions. In this post, I’ll share how I developed a scalable Song Request Tool designed for real-time interaction, simplicity, and enhancing live performances.",
+        "Managing song requests efficiently is a game-changer for DJs who aim to balance crowd engagement with smooth transitions. In this post, I’ll share how I developed a scalable Song Request Tool designed for real-time interaction, simplicity, and enhancing live performances. I’ll discuss the key features that make the tool versatile, such as automatic downloads and a streamlined queue system. By the end, you’ll see how technology can elevate the DJ experience while keeping audiences entertained and engaged.",
       fullPost: (
         <>
                   <h2 className="font-semibold mt-4 text-white">Why DJs Need Better Song Request Systems</h2>
@@ -123,7 +123,7 @@ export default function BlogList() {
       title: "From Concept to Prototype: Redesigning the Berkshire Hathaway Website with Modern UX Principles",
       imageSrc: "/icons/berkshire.png",
       summary:
-        "The redesign of the Berkshire Hathaway website demonstrates how modern UX principles can transform a traditional user interface into a more intuitive and engaging experience. In this post, I’ll walk through the process of conceptualizing, prototyping, and testing a complete website overhaul.",
+        "The redesign of the Berkshire Hathaway website demonstrates how modern UX principles can transform a traditional user interface into a more intuitive and engaging experience. In this post, I’ll walk through the process of conceptualizing, prototyping, and testing a complete website overhaul. I’ll highlight the challenges faced during the redesign and the strategies used to address them, from improving navigation to optimizing content presentation. By the end, you’ll gain insights into creating user-centric designs that enhance functionality and accessibility.",
       fullPost: (
         <>
                   <h2 className="font-semibold mt-4 text-white">Identifying the Problem</h2>
