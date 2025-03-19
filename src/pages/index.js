@@ -50,6 +50,34 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl lg:text-4xl font-semibold text-center mb-8">Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mt-10 lg:mt-16 justify-items-center">
             
+          <ProjectCard
+              title="ESPN API Documentation & Data Extraction Package"
+              description="A custom tool for extracting player statistics from ESPN's undocumented API endpoints, with AI-assisted documentation."
+              longDescription={
+                <>
+                  <p className="mb-6">
+                    The ESPN API Documentation & Data Extraction Package is a powerful tool I developed to retrieve 
+                    player-specific statistics from ESPN’s undocumented API endpoints. With over <strong>1,000 lines of code</strong>, 
+                    this package automates the process of searching, parsing, and extracting key player statistics from game box scores.
+                  </p>
+                  <p className="mb-6">
+                    One of the biggest challenges was ESPN’s lack of official API documentation. To overcome this, 
+                    I leveraged AI to generate an <strong>8-page documentation</strong> that helped structure the code, optimize endpoint calls, 
+                    and ensure efficient data retrieval. This documentation bridges the gap for developers who need structured access 
+                    to ESPN’s public data.
+                  </p>
+                  <p className="mb-6">
+                    The project features <strong>customized API calls</strong> that dynamically filter data down to individual player statistics, 
+                    enabling seamless integration into various applications. Whether for data analysis, sports betting tools, 
+                    or fantasy league management, this package simplifies working with ESPN’s API by providing a structured, 
+                    reusable solution for retrieving live sports data.
+                  </p>
+                </>
+              }
+              tags={['JavaScript', 'API Development', 'AI']}
+              projectLink="https://github.com/vunsh/ShootingBets"
+            />
+            
             <ProjectCard
               title="Stride"
               description="A sneaker reselling platform with a website and Discord bot for tracking sales and managing inventory."
@@ -90,6 +118,7 @@ export default function Home() {
               tags={['Wireframing', 'UI/UX Design', 'Figma']}
               projectLink="https://www.figma.com/proto/d489BGItEQzQXEAghsVfG6/High-Fidelity-Prototype---Berkshire-Hathaway?node-id=1-2&starting-point-node-id=1%3A2&t=Q3nTQlpBjmApu7HC-1"
             />
+
           </div>
 
           <div className="flex justify-center mt-10 lg:mt-12">
