@@ -65,7 +65,7 @@ export default function About() {
       </main>
 
       <footer className="relative text-center py-6 border-t border-gray-800 mt-12 lg:mt-16">
-        <p className="text-md lg:text-lg">© Zach Greene - 2024</p>
+        <p className="text-md lg:text-lg">© Zach Greene - 2025</p>
         <img
           src="/icons/zicon.webp"
           alt="Z Logo"
