@@ -20,7 +20,7 @@ export default function RightDrawer() {
   const menuItems = [
     { text: 'Home', link: '/' },
     { text: 'About', link: '/about' },
-    { text: 'My Resume', link: 'https://drive.google.com/file/d/1OJftACn9yDYcF2baubyvhIG5i3HutSFP/view?usp=sharing', target: '_blank' },
+    { text: 'My Resume', link: 'https://docs.google.com/document/d/11_XJ93ip_G7THey2d-fYWz9LnPwQoL7_/edit?usp=sharing&ouid=103015075994483174652&rtpof=true&sd=true', target: '_blank' },
   ];
 
   return (
