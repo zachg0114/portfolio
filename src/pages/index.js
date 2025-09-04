@@ -49,8 +49,32 @@ export default function Home() {
         <section className="mt-8 lg:mt-16">
           <h2 className="text-3xl sm:text-4xl lg:text-4xl font-semibold text-center mb-8">Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mt-10 lg:mt-16 justify-items-center">
-            
-          <ProjectCard
+
+            <ProjectCard
+              title="Sports Betting Insight Engine"
+              description="Two-service architecture for sports betting insights with real-time data analysis and AI-powered explanations."
+              longDescription={
+                <>
+                  <p className="mb-6">
+                    The Sports Betting Insight Engine is a robust platform designed to provide actionable insights for sports betting enthusiasts. 
+                    It features a Python backend for ingesting and analyzing MLB data, and a JavaScript-based Discord bot frontend for seamless user interaction.
+                  </p>
+                  <p className="mb-6">
+                    Key functionalities include integration with real-time sports data APIs to compute expected value (EV) edges between sportsbook odds 
+                    and statistical probabilities. This ensures users have access to data-driven betting insights.
+                  </p>
+                  <p className="mb-6">
+                    The platform also leverages AI through OpenRouter LLMs to generate betting explanations and structured analysis, making it accessible 
+                    to both novice and experienced users. Designed with scalability in mind, the system is ready for future extensions, such as website 
+                    integration and subscription-based models.
+                  </p>
+                </>
+              }
+              tags={['Python', 'FastAPI', 'Pandas', 'PostgreSQL', 'Node.js', 'Discord.js', 'Docker', 'OpenRouter AI API']}
+              projectLink="https://github.com/zachg0114/SportsBettingInsightEngine"
+            />
+
+            <ProjectCard
               title="ESPN API Documentation & Data Extraction Package"
               description="A custom tool for extracting player statistics from ESPN's undocumented API endpoints, with AI-assisted documentation."
               longDescription={
